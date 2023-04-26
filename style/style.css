@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'times';
+    src: url('../fonts/times.ttf') format('truetype'),
+      url('../fonts/times.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 body {
     font-family: 'Ubuntu', sans-serif;
     background: #2373BA;
@@ -22,10 +29,14 @@ header .header-wrapper {
 }
 
 .header-logo a span {
+    font-family: 'times' !important;
+    font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14.3487px;
+    line-height: 107.5%;
+    leading-trim: both;
+    text-edge: cap;
     display: flex;
-    margin-bottom: -5px;
     align-items: flex-end;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -238,6 +249,7 @@ header .header-wrapper {
 }
 
 .banner-center h2 {
+    letter-spacing: 0.04em;
     font-weight: 700;
     font-size: 27px;
     line-height: 130%;
@@ -316,7 +328,16 @@ header .header-wrapper {
     text-transform: uppercase;
     color: #2373BA;
 }
-
+.bold a{
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2373BA !important;
+}
 .header-logo-line a {
     text-decoration: none;
     display: flex;
@@ -1003,7 +1024,7 @@ height: 493.56px;
     .banner-center-btn2 {
         width: 132px;
         height: 50px;
-        margin-left: 16px;
+        margin-left: 8px;
     }
 
     .banner-center {
