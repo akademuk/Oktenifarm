@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <header>
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="">
+                    <span>Завжди <br> зі мною!</span>
+                </a>
+            </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Головна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Відгуки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Де придбати
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-logo-line">
+                <a href="#">
+                    <img src="img/LogoLibrary.png" alt="">
+                    <p>Швидка допомога <br> від 1 хвилини</p>
+                </a>
+            </div>
+            <div class="burger-menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>menu</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navBurger">
+       <div class="scroll">
+        <ul>
+            <li><a href="#" class="linkBurger" onclick="closeBurger()">Головна</a></li>
+            <li><a href="#" class="linkBurger" onclick="closeBurger()">Про нас</a></li>
+            <li><a href="#" class="linkBurger" onclick="closeBurger()">Відгуки</a></li>
+            <li><a href="#" class="linkBurger" onclick="closeBurger()">Де придбати</a></li>
+        </ul>
+       <div class="navBurgerContact">
+            <p>
+                <img src="img/tel.svg" alt="tel">
+                Гаряча лінія
+            </p>
+            <a href="tel:380441234567" style="margin-bottom: 17.5px;">+38 044 123 45 67</a>
+            <p>
+                <img src="img/mail.svg" alt="tel">
+                Напишіть нам
+            </p>
+            <a href="mailto:support@name.com">support@name.com</a>
+            <img src="img/logoBurger.png" alt="">
+            <p class="copirite">© 2023 | octenisept.com.ua | Всі права захищені.</p>
+            <img src="img/Label Agency.png" alt="" style="margin-left: auto;">
+       </div> 
+       </div>
+    </nav>
+
+    <section class="banner">
+        <div class="header-wrapper">
+            <div class="bannerFlex">
+                <div class="banner-left">
+                    <img src="img/bannerImgBig.png" alt="">
+                </div>
+                <div class="banner-center">
+                    <h1>Антисептик</h1>
+                    <img src="img/bannerTwo.png" alt="">
+                    <h2>Незмінний помічник у кожній родині</h2>
+                    <p>
+                        Будьте завжди готові до будь-яких викликів життя. <span>Один пшик - захист на 24 години!</span>
+                    </p>
+                    <div class="bannerBtns">
+                        <button class="banner-center-btn1">де придбати
+                            <img src="img/btn-arrow.svg" alt="">
+                        </button>
+                        <button class="banner-center-btn2">інструкція
+                            <img src="img/infoBtn.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="tabs">
+                    <div class="banner-tabs">
+                        <button class="tab-btn active" data-tab="tab1">
+                            <img src="img/bannerTabSvg1.svg" alt="">
+                            <span>В домашній аптечці</span>
+                            <b>Вдома</b>
+                        </button>
+                        <button class="tab-btn" data-tab="tab2">
+                            <img src="img/bannerTabSvg2.svg" alt="">
+                            <span>Допомога у будь-якому віці</span>
+                            <b>У будь-якому віці</b>
+                        </button>
+                        <button class="tab-btn" data-tab="tab3">
+                            <img src="img/bannerTabSvg3.svg" alt="">
+                            <span>На прогулянці з дитиною</span>
+                            <b>Для дитини</b>
+                        </button>
+                        <button class="tab-btn" data-tab="tab4">
+                            <img src="img/bannerTabSvg4.svg" alt="">
+                            <span>Незамінний помічник у подорожах</span>
+                            <b>У подорожі</b>
+                        </button>
+                    </div>
+                    <div class="banner-tabs-container">
+                        <div class="tab-content active" data-tab="tab1">
+                            <div class="tab-content-img">
+                                <img src="img/bannerTab1.png" alt="">
+                            </div>
+                            <div class="tab-content-text">
+                                <div class="tab-content-text-left">
+                                    <img src="img/bannerTabSmall.png" alt="">
+                                </div>
+                                <div class="tab-content-text-tittle">
+                                    <h2>Очищення та дезінфекція</h2>
+                                    <h3>поранень будь-якої складності</h3>
+                                </div>
+                                <div class="tab-content-text-text">
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Поверхневі рани та опіки
+                                    </div>
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        При обморожені кінцівок та холодових травм
+                                    </div>
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        При подразненні шкіри після татуювання та татуажу
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-tab="tab2">
+                            <div class="tab-content-img">
+                                <img src="img/bannerTab2.png" alt="">
+                            </div>
+                            <div class="tab-content-text">
+                                <div class="tab-content-text-left">
+                                    <img src="img/bannerTabSmall.png" alt="">
+                                </div>
+                                <div class="tab-content-text-tittle">
+                                    <h2>Для здоров'я та комфорту</h2>
+                                    <h3>близьких людей</h3>
+                                </div>
+                                <div class="tab-content-text-text">
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Лікування виразки на ногах
+                                    </div>
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Ефективний при діабетичній стопі
+                                    </div>
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Допомога при пролежнях
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-tab="tab3">
+                            <div class="tab-content-img">
+                                <img src="img/bannerTab3.png" alt="">
+                            </div>
+                            <div class="tab-content-text">
+                                <div class="tab-content-text-left">
+                                    <img src="img/bannerTabSmall.png" alt="">
+                                </div>
+                                <div class="tab-content-text-tittle">
+                                    <h2>Дбайливий догляд</h2>
+                                    <h3>за малюком</h3>
+                                </div>
+                                <div class="tab-content-text-text">
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Обробка пупочної рани
+                                    </div>
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Обробка дерматитів шкіри та слизових оболонок
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-tab="tab4">
+                            <div class="tab-content-img">
+                                <img src="img/bannerTab4.png" alt="">
+                            </div>
+                            <div class="tab-content-text">
+                                <div class="tab-content-text-left">
+                                    <img src="img/bannerTabSmall.png" alt="">
+                                </div>
+                                <div class="tab-content-text-tittle">
+                                    <h2>На будь-який</h2>
+                                    <h3>випадок життя</h3>
+                                </div>
+                                <div class="tab-content-text-text">
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Подряпини та садна
+                                    </div>
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Безболісно лікує пухирі на ногах від нового взуття
+                                    </div>
+                                    <div class="tab-content-text-text-list">
+                                        <div class="circle"></div>
+                                        Усуває інфекції там, де інші препарати не можуть
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="tabs-section">
+        <button class="tab-btn2 active" data-tab="tabSection1">Tab 1</button>
+        <button class="tab-btn2" data-tab="tabSection2">Tab 2</button>
+        <button class="tab-btn2" data-tab="tabSection3">Tab 3</button>
+        <button class="tab-btn2" data-tab="tabSection4">Tab 4</button>
+        <button class="tab-btn2" data-tab="tabSection5">Tab 5</button>
+        <button class="tab-btn2" data-tab="tabSection6">Tab 6</button>
+        <div class="tab-content2 active" data-tab="tabSection1">
+            <p>Tab 1 content goes here</p>
+            <button class="next-btn">Next</button>
+        </div>
+        <div class="tab-content2" data-tab="tabSection2">
+            <p>Tab 2 content goes here</p>
+            <button class="back-btn">Back</button>
+            <button class="next-btn">Next</button>
+        </div>
+        <div class="tab-content2" data-tab="tabSection3">
+            <p>Tab 3 content goes here</p>
+            <button class="back-btn">Back</button>
+            <button class="next-btn">Next</button>
+        </div>
+        <div class="tab-content2" data-tab="tabSection4">
+            <p>Tab 4 content goes here</p>
+            <button class="back-btn">Back</button>
+            <button class="next-btn">Next</button>
+        </div>
+        <div class="tab-content2" data-tab="tabSection5">
+            <p>Tab 3 content goes here</p>
+            <button class="back-btn">Back</button>
+            <button class="next-btn">Next</button>
+        </div>
+        <div class="tab-content2" data-tab="tabSection6">
+            <p>Tab 4 content goes here</p>
+            <button class="back-btn">Back</button>
+
+        </div>
+    </div>
+
+
+    <div class="tabs-img-container">
+        <div class="tabsBtn-img">
+            <button class="tab-btn-img active" data-tab="tabImg1">
+                <img src="img/tabImg2.png" alt="">
+            </button>
+            <button class="tab-btn-img" data-tab="tabImg2">
+                <img src="img/tabImg2.png" alt="">
+            </button>
+            <button class="tab-btn-img" data-tab="tabImg3">
+                <img src="img/tabImg2.png" alt="">
+            </button>
+        </div>
+        <div class="tab-img-content active" data-tab="tabImg1">
+            <img src="img/tabImgContqnt2.png">
+        </div>
+        <div class="tab-img-content" data-tab="tabImg2">
+            <img src="img/tabImg2.png">
+        </div>
+        <div class="tab-img-content" data-tab="tabImg3">
+            <img src="img/tabImgContqnt2.png">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+    <script>
+       document.querySelector('.burger').addEventListener('click', function () {
+        this.classList.toggle('open');
+        document.querySelector('.navBurger').classList.toggle('open');
+        document.querySelector('.body').classList.toggle('active');
+        });
+
+        document.querySelector('.burger.open').addEventListener('click', function() {
+        document.querySelector('.body').classList.remove('active');
+        });
+
+
+    </script>
+</body>
+
+</html>
