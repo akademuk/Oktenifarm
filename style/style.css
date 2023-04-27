@@ -991,8 +991,9 @@ header .header-wrapper {
     line-height: 130%;
     color: #97C6ED;
 }
+
 .whyChoose {
-    background-image: url(../img/whyChooseBac.png),url(../img/whyChooseFon.png);
+    background-image: url(../img/whyChooseBac.png), url(../img/whyChooseFon.png);
     background-repeat: repeat, no-repeat;
     background-size: cover, cover;
     background-position: center, center;
@@ -1004,6 +1005,7 @@ header .header-wrapper {
     justify-content: center;
     box-sizing: border-box;
 }
+
 .whyChoose .wrapper {
     max-width: 1096px;
     padding-right: 43px;
@@ -1015,8 +1017,9 @@ header .header-wrapper {
     overflow: hidden;
     align-items: center;
     justify-content: space-between;
-    
+
 }
+
 .whyChooseLeft h2 {
     font-weight: 700;
     font-size: 50px;
@@ -1026,6 +1029,7 @@ header .header-wrapper {
     color: #FFFFFF;
     margin-bottom: 95px;
 }
+
 .whyChooseSection h3 {
     font-weight: 500;
     font-size: 28px;
@@ -1034,6 +1038,7 @@ header .header-wrapper {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
+
 .whyChooseSection p {
     font-weight: 400;
     font-size: 16px;
@@ -1044,35 +1049,43 @@ header .header-wrapper {
     text-align: right;
     width: 100%;
 }
+
 .whyChooseIcon1,
 .whyChooseIcon2,
 .whyChooseIcon3 {
     text-align: right;
 }
+
 .whyChooseIcon1 {
     margin-bottom: 143px;
     height: 120px;
 }
+
 .whyChooseIcon2 {
     margin-bottom: 100px;
     height: 118px;
 }
+
 .whyChooseIcon3 {
     height: 118px;
     margin-top: 50px;
 }
+
 .whyChooseIcon4 {
     margin-top: 50px;
     margin-bottom: 104px;
     height: 160px;
 }
+
 .whyChooseIcon5 {
     margin-bottom: 100px;
     height: 106px;
 }
+
 .whyChooseIcon6 {
     height: 122px;
 }
+
 .whyChooseTittle {
     display: flex;
     align-items: center;
@@ -1080,55 +1093,67 @@ header .header-wrapper {
     flex-direction: column;
 
 }
+
 .whyChooseTittle .circle {
     margin-left: 12px;
     margin-right: 0;
 }
+
 .whyChooseIcon4 .whyChooseTittle .circle {
     margin-right: 12px;
 }
-.whyChooseSection  {
+
+.whyChooseSection {
     display: flex;
     align-items: flex-start;
 }
+
 .whyChooseIcon1,
 .whyChooseIcon2,
 .whyChooseIcon3 {
     justify-content: flex-end;
 }
+
 .whyChooseIcon4 .whyChooseTittle,
 .whyChooseIcon5 .whyChooseTittle,
-.whyChooseIcon6 .whyChooseTittle{
+.whyChooseIcon6 .whyChooseTittle {
     justify-content: flex-start;
 }
+
 .whyChooseIcon4 .whyChooseTittle h3,
 .whyChooseIcon5 .whyChooseTittle h3,
-.whyChooseIcon6 .whyChooseTittle h3{
+.whyChooseIcon6 .whyChooseTittle h3 {
     width: 100%;
 }
+
 .whyChooseIcon4 .whyChooseTittle p,
 .whyChooseIcon5 .whyChooseTittle p,
-.whyChooseIcon6 .whyChooseTittle p{
+.whyChooseIcon6 .whyChooseTittle p {
     text-align: left;
 }
+
 .whyChooseIcon1 .circle,
 .whyChooseIcon2 .circle,
-.whyChooseIcon3 .circle{
-   margin-left: 12px;
-   margin-top: 15px;
+.whyChooseIcon3 .circle {
+    margin-left: 12px;
+    margin-top: 15px;
 }
+
 .whyChooseIcon4 .circle,
 .whyChooseIcon5 .circle,
-.whyChooseIcon6 .circle{
-   margin-right: 12px;
-   margin-top: 15px;
+.whyChooseIcon6 .circle {
+    margin-right: 12px;
+    margin-top: 15px;
 }
-.whyChoose .wrapper{
+
+.whyChoose .wrapper {
     position: relative;
 }
+
 .whyChooseRight {
     margin-top: -75px;
 }
+
 .whyChooseAnimation {
     position: absolute;
     bottom: -100%;
@@ -1139,6 +1164,7 @@ header .header-wrapper {
     width: 1028.68px;
     transition: bottom 0.5s ease-in-out;
 }
+
 .whyChooseAnimation img {
     width: 1028px;
     max-width: 1028px;
@@ -1163,6 +1189,7 @@ header .header-wrapper {
     top: -35px;
     z-index: -1;
 }
+
 .whyChooseIcon2 .whyChooseTittle::after {
     content: "";
     background: url(../img/whyChooseSection2.svg);
@@ -1175,6 +1202,7 @@ header .header-wrapper {
     top: -23px;
     z-index: -1;
 }
+
 .whyChooseIcon3 .whyChooseTittle::after {
     content: "";
     background: url(../img/whyChooseSection3.svg);
@@ -1187,6 +1215,7 @@ header .header-wrapper {
     top: 4px;
     z-index: -1;
 }
+
 .whyChooseIcon4 .whyChooseTittle::after {
     content: "";
     background: url(../img/whyChooseSection4.svg);
@@ -1199,6 +1228,7 @@ header .header-wrapper {
     top: 4px;
     z-index: -1;
 }
+
 .whyChooseIcon5 .whyChooseTittle::after {
     content: "";
     background: url(../img/whyChooseSection5.svg);
@@ -1211,6 +1241,7 @@ header .header-wrapper {
     top: 4px;
     z-index: -1;
 }
+
 .whyChooseIcon6 .whyChooseTittle::after {
     content: "";
     background: url(../img/whyChooseSection6.svg);
@@ -1223,10 +1254,12 @@ header .header-wrapper {
     top: 4px;
     z-index: -1;
 }
+
 .whyChooseTittle {
     position: relative;
     z-index: 1;
 }
+
 .whyChooseIcon1 .whyChooseTittle::before {
     content: "";
     background: url(../img/whyChooseIcon1.png);
@@ -1240,6 +1273,7 @@ header .header-wrapper {
     z-index: -1;
 
 }
+
 .whyChooseIcon2 .whyChooseTittle::before {
     content: "";
     background: url(../img/whyChooseIcon2.png);
@@ -1252,6 +1286,7 @@ header .header-wrapper {
     top: -5px;
     z-index: -1;
 }
+
 .whyChooseIcon3 .whyChooseTittle::before {
     content: "";
     background: url(../img/whyChooseIcon3.png);
@@ -1264,6 +1299,7 @@ header .header-wrapper {
     top: -2px;
     z-index: -1;
 }
+
 .whyChooseIcon4 .whyChooseTittle::before {
     content: "";
     background: url(../img/whyChooseIcon4.png);
@@ -1276,6 +1312,7 @@ header .header-wrapper {
     top: -20px;
     z-index: -1;
 }
+
 .whyChooseIcon5 .whyChooseTittle::before {
     content: "";
     background: url(../img/whyChooseIcon5.png);
@@ -1288,6 +1325,7 @@ header .header-wrapper {
     top: -16px;
     z-index: -1;
 }
+
 .whyChooseIcon6 .whyChooseTittle::before {
     content: "";
     background: url(../img/whyChooseIcon6.png);
@@ -1300,31 +1338,40 @@ header .header-wrapper {
     top: -11px;
     z-index: -1;
 }
+
 .whyChooseIcon1 {
     margin-right: 100px;
 }
+
 .whyChooseIcon2 {
     margin-right: 50px;
 }
+
 .whyChooseIcon5 {
     margin-left: 20px;
 }
+
 .whyChooseIcon6 {
     margin-left: 100px;
 }
+
 .animationMobile {
     display: none;
 }
+
 .choiceTabsContent {
     display: none;
     height: 924px;
 }
+
 .choiceTabsContent.active {
     display: flex;
 }
+
 .choiceTabs {
     position: relative;
 }
+
 .choiceTabsContainer {
     position: absolute;
     width: 190px;
@@ -1332,27 +1379,134 @@ header .header-wrapper {
     flex-direction: column;
     height: 100%;
     top: 0;
-    left: 50%;
+    left:calc(100% - 1285px);
+}
+
+.choiceTabsBtn.active {
+    background: transparent;
+    color: #FFFFFF;
+    border-bottom: transparent;
+}
+
+.choiceTabsBtn.active img {
+    filter: invert(87%) sepia(86%) saturate(0%) hue-rotate(148deg) brightness(150%);
+}
+
+.choiceTabsBtn.active p {
+    color: #FFFFFF;
+}
+.choiceTabsBtn.active::after {
+    filter: invert(87%) sepia(86%) saturate(0%) hue-rotate(148deg) brightness(150%);
 }
 .choiceTabsBtn {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
     height: 25%;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    color: #0461A3;
+    padding-top: 115px;
+    border: none;
+    border-bottom: 4px solid #0461A3;
 }
+
+.choiceTabsBtn:nth-of-type(1)::after {
+    content: "";
+    background: url(../img/choiceTabsIcons1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+.choiceTabsBtn:nth-of-type(2)::after {
+    content: "";
+    background: url(../img/choiceTabsIcons2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 158px;
+    height: 24px;
+}
+
+.choiceTabsBtn:nth-of-type(3)::after {
+    content: "";
+    background: url(../img/choiceTabsIcons3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 158px;
+    height: 24px;
+}
+
+.choiceTabsBtn:nth-of-type(4)::after {
+    content: "";
+    background: url(../img/choiceTabsIcons4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 158px;
+    height: 24px;
+}
+
+.choiceTabsBtn:nth-last-of-type(1) {
+    border-bottom: 0;
+}
+
+.choiceTabsBtn img {
+    width: 119.1px;
+    height: 19.52px;
+    margin-bottom: 8px;
+}
+
+.choiceTabsBtn p {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 130%;
+    text-align: center;
+    color: #0461A3;
+}
+
 .choiceTabsContentCenter {
     padding-left: 254px;
 }
+
 .choiceTabsContentLeft {
-    width: 50%;
+    width: calc(100% - 1202px);
 }
-.choiceTabsContentLeft img{
+
+.choiceTabsContentLeft img {
     max-width: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
+
 .choiceTabsContentCenter {
-    width: 546px;
+    min-width: 546px;
 }
+
 .choiceTabsContentRight {
-    width: 402px;
+    min-width: 402px;
 }
 
 
@@ -1883,169 +2037,202 @@ header .header-wrapper {
         transform: rotate(180deg);
         margin-left: 8px;
     }
+
     .whyChoose {
         height: 790px;
     }
-    .whyChoose .wrapper  {
+
+    .whyChoose .wrapper {
         height: 100%;
         box-sizing: border-box;
         max-width: 100%;
         padding: 75px 64px 0 64px;
     }
+
     .whyChooseLeft h2 {
         font-size: 28px;
         line-height: 112.5%;
         margin-bottom: 108px;
     }
+
     .whyChooseSection h3 {
         font-size: 16px;
         line-height: 107.5%;
         margin-bottom: 8px;
     }
+
     .whyChooseSection p {
         font-size: 13px;
         line-height: 130%;
     }
+
     .whyChooseSection {
         flex-direction: column;
     }
+
     .whyChooseSection .circle {
         min-width: 8px;
         min-height: 8px;
         max-width: 8px;
         max-height: 8px;
     }
+
     .whyChooseSection p {
         text-align: left;
     }
+
     .whyChooseIcon1 .whyChooseTittle::before {
         background: url(../img/tabletLine.png) !important;
         background-repeat: no-repeat !important;
-        background-size: cover  !important;
+        background-size: cover !important;
         height: 100px;
         width: 100%;
         left: 8px;
         top: 11px;
         transform: rotate(180deg);
     }
+
     .whyChooseIcon2 .whyChooseTittle::before {
         background: url(../img/tabletLine.png) !important;
         background-repeat: no-repeat !important;
-        background-size: cover  !important;
+        background-size: cover !important;
         height: 100px;
         width: 100%;
         left: 8px;
         top: 27px;
         transform: rotate(180deg);
     }
+
     .whyChooseIcon2 {
         margin-bottom: 40px;
     }
+
     .whyChooseIcon3 .whyChooseTittle::before {
         background: url(../img/tabletLine.png) !important;
         background-repeat: no-repeat !important;
-        background-size: cover  !important;
+        background-size: cover !important;
         height: 100px;
         width: 100%;
         left: 8px;
         top: 26px;
         transform: rotate(180deg);
     }
+
     .whyChooseIcon4 .whyChooseTittle::before {
         background: url(../img/tabletLine.png) !important;
         background-repeat: no-repeat !important;
-        background-size: cover  !important;
+        background-size: cover !important;
         height: 100px;
         width: 100%;
         left: -4px;
         top: 12px;
     }
+
     .whyChooseIcon5 .whyChooseTittle::before {
         background: url(../img/tabletLine.png) !important;
         background-repeat: no-repeat !important;
-        background-size: cover  !important;
+        background-size: cover !important;
         height: 100px;
         width: 85%;
         left: 77px;
         top: 29px;
     }
+
     .whyChooseIcon6 .whyChooseTittle::before {
         background: url(../img/tabletLine.png) !important;
         background-repeat: no-repeat !important;
-        background-size: cover  !important;
+        background-size: cover !important;
         height: 100px;
         width: 80%;
         left: 100px;
         top: 29px;
     }
+
     .whyChooseIcon4,
     .whyChooseIcon5,
     .whyChooseIcon6 {
         flex-direction: column-reverse;
         margin-left: 0;
     }
+
     .whyChooseSection {
         width: 100%;
     }
-    .whyChooseIcon4 .whyChooseTittle p, .whyChooseIcon5 .whyChooseTittle p, .whyChooseIcon6 .whyChooseTittle p {
+
+    .whyChooseIcon4 .whyChooseTittle p,
+    .whyChooseIcon5 .whyChooseTittle p,
+    .whyChooseIcon6 .whyChooseTittle p {
         text-align: right;
     }
+
     .whyChooseIcon4 .whyChooseTittle,
     .whyChooseIcon5 .whyChooseTittle,
-    .whyChooseIcon6 .whyChooseTittle{
+    .whyChooseIcon6 .whyChooseTittle {
         align-items: flex-end !important;
         text-align: right;
     }
+
     .whyChooseIcon4 .whyChooseTittle p br,
     .whyChooseIcon5 .whyChooseTittle p br,
-    .whyChooseIcon6 .whyChooseTittle p br{
+    .whyChooseIcon6 .whyChooseTittle p br {
         display: none;
     }
+
     .whyChooseSection {
         height: auto !important;
     }
+
     .whyChooseIcon1 .whyChooseTittle::after {
         width: 35px;
         height: 35px;
         top: -15px;
         left: -15px;
     }
+
     .whyChooseIcon2 .whyChooseTittle::after {
         width: 35px;
         height: 35px;
         top: -10px;
         left: -20px;
     }
+
     .whyChooseIcon2 .whyChooseTittle p br:nth-of-type(1) {
         display: none;
     }
+
     .whyChooseIcon3 .whyChooseTittle::after {
         width: 35px;
         height: 35px;
         top: -15px;
         left: -15px;
     }
+
     .whyChooseIcon4 .whyChooseTittle::after {
         width: 35px;
         height: 35px;
         right: -25px;
     }
+
     .whyChooseIcon5 .whyChooseTittle::after {
         width: 35px;
         height: 35px;
         right: -25px;
     }
+
     .whyChooseIcon6 .whyChooseTittle::after {
         width: 35px;
         height: 35px;
         right: -25px;
     }
+
     .whyChooseIcon1 {
         margin-bottom: 20px;
     }
+
     .whyChooseLeft {
         width: 50%;
     }
+
     .whyChooseRight {
         margin-top: 150px;
         width: 50%;
@@ -2053,35 +2240,45 @@ header .header-wrapper {
         flex-direction: column;
         align-items: flex-end;
     }
+
     .whyChooseIcon4 {
         margin-top: 0;
         margin-bottom: 54px;
     }
+
     .whyChooseIcon5 {
         margin-bottom: 65px;
     }
-    .whyChooseIcon1 .circle, .whyChooseIcon2 .circle, .whyChooseIcon3 .circle {
+
+    .whyChooseIcon1 .circle,
+    .whyChooseIcon2 .circle,
+    .whyChooseIcon3 .circle {
         margin-left: 0;
     }
+
     .whyChooseTittle {
         width: 100%;
     }
+
     .whyChooseIcon1,
     .whyChooseIcon2,
     .whyChooseIcon3 {
         margin-right: 0;
     }
+
     .whyChooseIcon4 .circle,
     .whyChooseIcon5 .circle,
     .whyChooseIcon6 .circle {
         margin-left: auto;
         margin-right: 0;
     }
+
     .whyChooseIcon1 .whyChooseTittle,
     .whyChooseIcon2 .whyChooseTittle,
     .whyChooseIcon3 .whyChooseTittle {
         align-items: flex-start;
     }
+
     .whyChooseIcon1 .whyChooseTittle p br {
         display: none;
     }
@@ -2123,38 +2320,48 @@ header .header-wrapper {
     .tab-content-text-left {
         display: none;
     }
+
     .whyChoose .wrapper {
         align-items: flex-start;
         flex-direction: column;
     }
+
     .whyChooseIcon1 {
         margin-bottom: 38px;
     }
+
     .whyChooseIcon2 {
         margin-bottom: 57px;
     }
+
     .whyChooseIcon3 {
         margin-bottom: 54px;
     }
+
     .whyChooseTittle {
         text-align: left !important;
     }
+
     .whyChoose {
         height: 100%;
     }
+
     .whyChooseIcon4 .whyChooseTittle::after {
         right: 0;
         top: -15px;
         left: -15px;
     }
+
     .whyChooseIcon4 .whyChooseTittle::before {
         transform: rotate(180deg);
     }
+
     .whyChooseIcon5 .whyChooseTittle::after {
         right: 0;
         top: -15px;
         left: -15px;
     }
+
     .whyChooseIcon5 .whyChooseTittle::before {
         transform: rotate(180deg);
     }
@@ -2164,31 +2371,42 @@ header .header-wrapper {
         top: -15px;
         left: -15px;
     }
+
     .whyChooseIcon5 .whyChooseTittle::before {
         left: 10px;
     }
+
     .whyChooseIcon6 .whyChooseTittle::before {
         left: 10px;
     }
+
     .wrapperAnimation {
         padding-bottom: 86px !important;
     }
-    .whyChooseIcon4 .circle, .whyChooseIcon5 .circle, .whyChooseIcon6 .circle {
+
+    .whyChooseIcon4 .circle,
+    .whyChooseIcon5 .circle,
+    .whyChooseIcon6 .circle {
         margin-left: 0;
         margin-right: auto;
     }
+
     .whyChooseIcon6 .whyChooseTittle::before {
         transform: rotate(180deg);
     }
+
     .whyChooseTittle p {
         text-align: left !important;
     }
+
     .whyChooseRight {
         margin-top: 0;
     }
+
     .whyChooseLeft h2 {
         margin-bottom: 52px;
     }
+
     .tab-content-text-tittle {
         margin-left: 0;
         width: 100%;
@@ -2201,12 +2419,14 @@ header .header-wrapper {
     .tab-content-text-text {
         width: 100%;
     }
+
     .whyChooseAnimation {
         bottom: 0;
         width: 576px;
         height: 923px;
         left: 0;
     }
+
     .tab-content-text {
         padding: 16px;
     }
@@ -2269,14 +2489,17 @@ header .header-wrapper {
     .banner-center {
         width: calc(100% - 288px);
     }
+
     .family {
         padding: 64px 0;
     }
+
     .familyTabs {
         margin-top: 0;
         width: 100%;
         overflow: scroll;
     }
+
     .family .wrapper {
         padding-left: 64px;
         padding-right: 0;
@@ -2284,45 +2507,54 @@ header .header-wrapper {
         box-sizing: border-box;
         overflow: hidden;
     }
+
     .tab-btn2 {
         height: 90px;
         width: 106.67px;
         min-width: 106.67px;
     }
+
     .familyContentSection {
         flex-direction: column;
         padding-right: 64px;
         box-sizing: border-box;
     }
+
     .familyContentSectionRightText h3 {
         font-size: 13px;
     }
+
     .familyContentSectionRightText p {
         font-size: 13px;
     }
+
     .familyContentSectionRight {
         width: 100%;
         height: auto;
     }
+
     .familyContentSectionLeft {
         width: 100%;
         margin-right: 0;
         height: auto;
         margin-bottom: 32px;
     }
+
     .fameliBtn {
         margin-top: 32px;
     }
-    .whyChooseAnimation > img:nth-of-type(1) {
+
+    .whyChooseAnimation>img:nth-of-type(1) {
         display: none;
     }
+
     .animationMobile {
         display: block;
         width: 100% !important;
         height: 100% !important;
         object-fit: contain;
     }
-    
+
     .whyChooseAnimation {
         transform: none;
         right: 0;
@@ -2355,16 +2587,20 @@ header .header-wrapper {
     .bannerBtns {
         flex-direction: column;
     }
+
     .whyChoose .wrapper {
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .whyChooseAnimation {
         right: -100px;
     }
+
     .whyChooseAnimation img {
         width: 500px;
     }
+
     .banner-center-btn1 {
         width: 100%;
         margin-bottom: 16px;
@@ -2402,19 +2638,24 @@ header .header-wrapper {
     .banner-center {
         width: 288px;
     }
+
     .family .wrapper {
         padding-left: 16px;
     }
+
     .familyContentTittle {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .familyContentTittle img {
         margin-bottom: 8.5px;
     }
+
     .familyContentSection {
         padding-right: 16px;
     }
+
     .fameliBtn .banner-center-btn1 {
         margin-bottom: 0;
     }
