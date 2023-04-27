@@ -98,6 +98,7 @@ $(document).ready(function() {
   });
   
   
+  
   $(document).ready(function() {
     var tabTimer;
   
@@ -109,18 +110,15 @@ $(document).ready(function() {
   
     $('.choiceTabsBtn').click(function() {
       stopTimer();
-  
+    
       var tab_id = $(this).attr('data-tab');
-  
+    
       $('.choiceTabsBtn').removeClass('active');
-      $('.choiceTabsContent').removeClass('active');
-  
+      $('.choiceTabsContent').removeClass('active').hide(); // скрываем все контенты вкладок
+    
       $(this).addClass('active');
-      $('[data-tab="' + tab_id + '"]').addClass('active');
-  
-      startTimer();
+      $('[data-tab="' + tab_id + '"]').addClass('active').show(); // показываем выбранный контент вкладки
+    
     });
-  
-    startTimer();
   });
   
