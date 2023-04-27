@@ -30,65 +30,44 @@ $(document).ready(function() {
     startTimer();
   });
   
+
+
   $(document).ready(function() {
-// Получаем все кнопки вкладок и контент вкладок
-var tabsBtn = $(".tab-btn2");
-var tabsContent = $(".tab-content2");
-
-// По умолчанию показываем первую вкладку и скрываем остальные
-tabsContent.not(":first").hide();
-
-// Обработчик клика на кнопках вкладок
-tabsBtn.on("click", function() {
-  // Получаем значение атрибута data-tab для выбранной кнопки
-  var activeTab = $(this).data("tab");
-
-  // Скрываем все контейнеры, кроме того, который соответствует выбранной вкладке
-  $('.tab-content2:not([data-tab="'+activeTab+'"])').hide();
-
-  // Находим контент вкладки, соответствующий выбранной кнопке, и показываем его
-  $('.tab-content2[data-tab="'+activeTab+'"]').show();
-
-  // Удаляем класс "active" у всех кнопок вкладок
-  tabsBtn.removeClass("active");
-
-  // Добавляем класс "active" к выбранной кнопке вкладки
-  $(this).addClass("active");
-
-  // Для отладки можно вывести в консоль значение атрибута data-tab выбранной вкладки
-  console.log(activeTab);
-});
-
-// Обработчик клика на кнопке "Назад"
-$('.back-btn').click(function(){
-  // Получаем родительский элемент контейнера
-  var parent = $(this).parent();
-  // Получаем предыдущий контейнер
-  var prevTab = parent.prev('.tab-content2');
-  // Скрываем текущий контейнер и показываем предыдущий
-  parent.hide();
-  prevTab.show();
-});
-
-// Обработчик клика на кнопке "Далее"
-$('.next-btn').click(function(){
-  // Получаем родительский элемент контейнера
-  var parent = $(this).parent();
-  // Получаем следующий контейнер
-  var nextTab = parent.next('.tab-content2');
-  // Скрываем текущий контейнер и показываем следующий
-  parent.hide();
-  nextTab.show();
-});
-
-// Скрываем все вкладки, кроме первой
-$('.tab-content2:not(:first)').hide();
-
-
+    var tabsBtn = $(".tab-btn2");
+    var tabsContent = $(".tab-content2");
+    var currentTab = 0; // определяем текущую вкладку
+    
+    tabsContent.not(":first").hide();
+    tabsBtn.on("click", function() {
+      var activeTab = $(this).data("tab");
+      $('.tab-content2:not([data-tab="'+activeTab+'"])').hide();
+      $('.tab-content2[data-tab="'+activeTab+'"]').show();
+      tabsBtn.removeClass("active");
+      $(this).addClass("active");
+      currentTab = $(this).index(); // при клике на кнопку обновляем текущую вкладку
+      console.log(activeTab);
+    });
+  
+    const nextBtn = $('.next-btn'); // используем селектор jQuery
+    const backBtn = $('.back-btn'); // используем селектор jQuery
+  
+    nextBtn.on('click', () => {
+      if (currentTab < tabsContent.length - 1) { // проверяем, не достигнут ли конец списка вкладок
+        tabsContent.eq(currentTab).hide();
+        tabsContent.eq(++currentTab).show();
+        tabsBtn.removeClass('active').eq(currentTab).addClass('active');
+      }
+    });
+  
+    backBtn.on('click', () => {
+      if (currentTab > 0) { // проверяем, не достигнут ли начало списка вкладок
+        tabsContent.eq(currentTab).hide();
+        tabsContent.eq(--currentTab).show();
+        tabsBtn.removeClass('active').eq(currentTab).addClass('active');
+      }
+    });
   });
   
-
-
 
 
   $(document).ready(function() {
@@ -119,4 +98,29 @@ $('.tab-content2:not(:first)').hide();
   });
   
   
-
+  $(document).ready(function() {
+    var tabTimer;
+  
+  
+  
+    function stopTimer() {
+      clearInterval(tabTimer);
+    }
+  
+    $('.choiceTabsBtn').click(function() {
+      stopTimer();
+  
+      var tab_id = $(this).attr('data-tab');
+  
+      $('.choiceTabsBtn').removeClass('active');
+      $('.choiceTabsContent').removeClass('active');
+  
+      $(this).addClass('active');
+      $('[data-tab="' + tab_id + '"]').addClass('active');
+  
+      startTimer();
+    });
+  
+    startTimer();
+  });
+  
