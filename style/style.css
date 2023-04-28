@@ -91,10 +91,6 @@ header .header-wrapper {
     align-items: center;
 }
 
-.tab-content-img {
-    height: 333px;
-}
-
 .tab-content-img img {
     width: 100%;
     object-fit: cover;
@@ -2357,17 +2353,20 @@ color: #FFFFFF;
 
 
 
-
-
 @media (max-width: 1920px) {
     .header-wrapper {
         max-width: 1540px;
         margin: 0 auto;
     }
-
+    .banner-right {
+        height: 679px;
+    }
     .banner-left {
         width: 625px;
         margin-left: -160px;
+    }
+    .banner-tabs-container {
+        height: 539px;
     }
 
     .banner-left img {
@@ -3902,7 +3901,7 @@ color: #FFFFFF;
 
 /* //max-width: 768px */
 
-@media(max-width: 576px) {
+@media(max-width: 575px) {
     header {
         padding: 0 16px;
     }
