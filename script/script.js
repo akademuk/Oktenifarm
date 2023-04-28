@@ -269,3 +269,21 @@ $(document).ready(function () {
   });
 });
 /* ------------------------------------------------------------------ */
+
+
+
+
+$(document).ready(function () {
+  var openModalBtn = $(".open-modal");
+  var modal = $(".modalWindows");
+  var closeModalBtn = $(".close-modal");
+  var body1 = $(".body");
+  openModalBtn.on("click", function () {
+    modal.addClass("active");
+    body1.addClass("active");
+  });
+  closeModalBtn.on("click", function () {
+    modal.removeClass("active");
+    body1.removeClass("active");
+  });
+});

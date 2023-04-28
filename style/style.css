@@ -1280,12 +1280,12 @@ header .header-wrapper {
     content: "";
     background: url(../img/whyChooseIcon2.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
-    width: 238.88px;
+    width: 275.88px;
     height: 118.06px;
-    left: 120.35px;
-    top: -5px;
+    left: 124.35px;
+    top: -2px;
     z-index: -1;
 }
 
@@ -2184,11 +2184,171 @@ footer .wrapper {
     display: block !important;
   }
 
+/* Скрыть модальное окно по умолчанию */
+.modalWindows {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  .modalWindows.active {
+    display: block;
+  }
+  /* Стили для содержимого модального окна */
+  .modalWindowsContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F2F4F8;
+    border-radius: 4px;
+  }
+  
+  /* Стили для кнопки закрытия модального окна */
+  .close-modal {
+    display: block;
+    margin-top: 20px;
+  }
+.modalWindowsContent {
+    width: 1116px;
+    display: flex;
+    height: 744px;
+    max-height: 90vh;
+    background: #F2F4F8;
+    overflow-y: auto;
+}
+.modalWindowsContentLeft {
+    width: 546px;
+}
+.modalWindowsContentRight {
+    width: 570px;
+    background: #F2F4F8;
+}
+.modalWindowsContentLeftImg {
+    width: 100%;
+}
+.modalWindowsContentLeftImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modalWindowsContentLeftContent {
+    background: #2373BA;
+    height: auto;
+    padding: 40px 37px 31px 37px;
+}
+.modalLogoTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.modalLogoTop img {
+    width: 163.13px;
+height: 26.74px;
+}
+.modalLogoTop p {
+    font-family: 'times';
+    font-size: 10.9626px;
+    line-height: 107.5%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 5px;
+    margin-bottom: -10px;
+}
+.modalLogo > p {
+    font-weight: 700;
+font-size: 12px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
 
-
-
-
-
+.modalWindowsContentLeftContent {
+    position: relative;
+}
+.modalLogoImg {
+    position: absolute;
+    bottom: 20px;
+    right: -80px;
+    height: 400px;
+}
+.modalLogoImg img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.modalWindowsContentRight {
+    padding: 70px 95px 70px 119px;
+    box-sizing: border-box;
+    position: relative;
+}
+.close-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #2373BA;
+    border-radius: 4px;
+    border: none;
+    margin-left: auto;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    margin-top: 0;
+}
+.modalWindowsContentRight h2{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #30394B;
+    margin-bottom: 32px;
+}
+.modalSection {
+    padding: 16px;
+}
+.modalSectionImg img {
+    margin-bottom: 16px;
+}
+.modalSection > p {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 130%;
+    color: #3F4C63;
+    margin-bottom: 16px;
+}
+.modalSection > a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2373BA;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.modalSection > a::after {
+    content: "";
+    background: url(../img/modalArrowS.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+}
 
 
 
@@ -2446,7 +2606,20 @@ footer .wrapper {
     .banner {
         padding: 32px 0;
     }
-
+    .modalWindowsContent {
+        width: 90%;
+    }
+    .modalLogoImg {
+       display: none;
+    }
+    .modalWindowsContentRight {
+        width: 50%;
+        padding-left: 50px;
+    }
+    
+    .modalWindowsContentLeft {
+        width: 50%;
+    }
     .banner .header-wrapper {
         padding: 0 64px;
         box-sizing: border-box;
@@ -3261,6 +3434,113 @@ footer .wrapper {
         margin-top: 8px !important;
         margin-left: 0 !important;
     }
+    .modalWindowsContent {
+        height: auto;
+    }
+    .modalWindowsContentLeftImg {
+        height: 87%;
+    }
+    .whyChooseSection  {
+        position: relative;
+    }
+    .whyChooseIcon3::after {
+        content: "";
+        background: url(../img/tabletLine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 85%;
+        height: 100px;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        transform: rotate(180deg);
+        z-index: 100;
+    }
+    .whyChooseIcon2::after {
+        content: "";
+        background: url(../img/tabletLine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80%;
+        height: 100px;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        transform: rotate(180deg);
+        z-index: 100;
+    }
+    .whyChooseIcon1::after {
+        content: "";
+        background: url(../img/tabletLine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 81%;
+        height: 100px;
+        position: absolute;
+        top: 12px;
+        left: 0;
+        transform: rotate(180deg);
+        z-index: 100;
+    }
+    .whyChooseIcon4::after {
+        content: "";
+        background: url(../img/tabletLine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 12px;
+        right: 0;
+        transform: rotate(0);
+        z-index: 100;
+    }
+    .whyChooseIcon5::after {
+        content: "";
+        background: url(../img/tabletLine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 91%;
+        height: 100px;
+        position: absolute;
+        top: 27px;
+        right: 0;
+        transform: rotate(0);
+        z-index: 100;
+    }
+    .whyChooseAnimation {
+        width: 120% !important;
+    }
+    .whyChooseAnimation img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .whyChooseIcon6::after {
+        content: "";
+        background: url(../img/tabletLine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 83%;
+        height: 100px;
+        position: absolute;
+        top: 27px;
+        right: 0;
+        transform: rotate(0);
+        z-index: 100;
+    }
+    .whyChoose .wrapper {
+        align-items: flex-start;
+    }
+    .whyChooseSection .whyChooseTittle::before {
+        content: none;
+    }
+
 }
 
 /* //max-width: 1200px */
@@ -3541,6 +3821,83 @@ footer .wrapper {
         height: 100%;
         bottom: 0;
     }
+    .modalWindowsContent {
+        flex-direction: column-reverse;
+    }
+    .modalWindowsContentRight {
+        width: 100%;
+        padding: 64px 16px;
+    }
+    .close-modal {
+        top: 16px;
+        right: 16px;
+    }
+    .modalWindowsContentLeftContent {
+        padding: 20px;
+    }
+    .modalLogo > p {
+        font-size: 6.32967px;
+        line-height: 130%;
+    }
+    .modalLogoTop p {
+        font-size: 5.78245px;
+        margin-bottom: 0;
+        line-height: 107.5%;
+    }
+    .modalLogoTop img {
+        width: 86px;
+        height: 14px;
+    }
+    .modalWindowsContentLeft {
+        width: 100%;
+    }
+    .modalLogoImg {
+        display: block;
+        width: 200px;
+        height: 200px;
+        right: -30px;
+    }
+    .modalWindowsContentRight h2 {
+        margin-top: 20px;
+    }
+    .whyChooseAnimation {
+        width: 100% !important;
+    }
+    .whyChooseIcon5::after {
+        transform: rotate(180deg);
+    }
+    .whyChooseIcon1::after {
+        width: 88%;
+    }
+    .whyChooseIcon4::after {
+        width: 90%;
+        left: 0;
+        right: auto;
+    }
+    .whyChooseIcon2::after {
+        width: 88%;
+    }
+    .whyChooseIcon4::after {
+        transform: rotate(180deg);
+    }
+    .whyChooseIcon6::after {
+        transform: rotate(180deg);
+    }
+    .whyChooseIcon6::after {
+        width: 100%;
+    }
+    .whyChooseIcon5::after {
+        width: 100%;
+    }
+    .whyChooseRight {
+        width: 70%;
+    }
+    .wrapperAnimation.animation-slide .whyChooseAnimation {
+        bottom: 0;
+    }
+    .whyChooseLeft {
+        width: 70%;
+    }
 }
 
 /* //max-width: 768px */
@@ -3572,10 +3929,10 @@ footer .wrapper {
         padding-right: 16px;
     }
 
-    .whyChooseAnimation {
-        right: -100px;
-    }
 
+    .whyChooseAnimation {
+        right: -8px;
+    }
     .whyChooseAnimation img {
         width: 500px;
     }
@@ -3717,6 +4074,43 @@ footer .wrapper {
 /* //max-width: 480px */
 
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+    .whyChooseTittle p {
+        width: 70%;
+        margin-right: auto;
+    }
+    .whyChooseTittle {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .whyChooseIcon1::after {
+        width: 100%;
+        top: 28px;
+        left: 4px;
+    }
+    .whyChooseIcon2::after {
+        top: 45px;
+        left: 7px;
+        width: 100%;
+    }
+    .whyChooseIcon3::after {
+        top: 29px;
+        width: 88%;
+        left: 7px;
+    }
+    .whyChooseIcon4::after {
+        top: 28px;
+        left: 7px;
+        width: 97%;
+    }
+    .whyChooseIcon5::after {
+        top: 45px;
+        left: 8px;
+    }
+    .whyChooseIcon6::after {
+        top: 62px;
+        left: 7px;
+    }
+}
 
 /* //max-width: 400px */
