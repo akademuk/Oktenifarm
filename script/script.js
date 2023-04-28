@@ -69,7 +69,6 @@ $(document).ready(function() {
   });
   
 
-
   $(document).ready(function() {
     // Получаем все кнопки вкладок и контент вкладок
     var tabsBtn = $(".tab-btn-img");
@@ -82,17 +81,17 @@ $(document).ready(function() {
     tabsBtn.on("click", function() {
       // Получаем значение атрибута data-tab кнопки вкладки
       var activeTab = $(this).attr("data-tab");
+ 
   
       // Скрываем все контенты вкладок
       tabsContentImg.hide();
   
-      // Удаляем класс "active" у всех кнопок вкладок
-      tabsBtn.removeClass("active");
-  
       // Находим контент вкладки, соответствующий выбранной кнопке, и показываем его
-      $("[data-tab='" + activeTab + "']").show();
+      $("[data-tab='" + activeTab + "']").addClass("active").show();
+
   
       // Добавляем класс "active" к выбранной кнопке вкладки
+      tabsBtn.removeClass("active");
       $(this).addClass("active");
     });
   });

@@ -1373,6 +1373,7 @@ header .header-wrapper {
 .choiceTabs {
     position: relative;
     background: #0461A3;
+    overflow: hidden;
 }
 
 .choiceTabsContainer {
@@ -2181,7 +2182,9 @@ footer .wrapper {
     transform: rotate(-90deg);
     transition: all 0.3s ease-in-out;
   }
-  
+  .tab-img-content.active {
+    display: block !important;
+  }
   
 
 
@@ -3257,6 +3260,10 @@ footer .wrapper {
     }
     .window-content p {
         font-size: 11px;
+    }
+    .choiceTabsContentCenterTextBtn .banner-center-btn2 {
+        margin-top: 8px !important;
+        margin-left: 0 !important;
     }
 }
 
