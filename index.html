@@ -1421,16 +1421,23 @@
     <script src="script/slick.min.js"></script>
     <script src="script/script.js"></script>
     <script>
-        document.querySelector('.burger').addEventListener('click', function () {
-            this.classList.toggle('open');
-            document.querySelector('.navBurger').classList.toggle('open');
-            document.querySelector('.body').classList.toggle('active');
-        });
-
-        document.querySelector('.burger.open').addEventListener('click', function () {
-            document.querySelector('.body').classList.remove('active');
-        });
+        const burger = document.querySelector('.burger');
+        if (burger) {
+            burger.addEventListener('click', function () {
+                this.classList.toggle('open');
+                document.querySelector('.navBurger').classList.toggle('open');
+                document.querySelector('.body').classList.toggle('active');
+            });
+        }
+    
+        const openBurger = document.querySelector('.burger.open');
+        if (openBurger) {
+            openBurger.addEventListener('click', function () {
+                document.querySelector('.body').classList.remove('active');
+            });
+        }
     </script>
+    
 
     <script>
 $(document).ready(function() {

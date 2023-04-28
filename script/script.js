@@ -69,59 +69,91 @@ $(document).ready(function() {
   });
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   $(document).ready(function() {
-    // Получаем все кнопки вкладок и контент вкладок
     var tabsBtn = $(".tab-btn-img");
     var tabsContentImg = $(".tab-img-content");
   
-    // По умолчанию показываем первую вкладку и скрываем остальные
+    var activeContent = tabsContentImg.filter(".active"); // Сохраняем ссылку на последний активный контент
+    
     tabsContentImg.not(":first").hide();
   
-    // Обработчик клика по кнопке вкладки
     tabsBtn.on("click", function() {
-      // Получаем значение атрибута data-tab кнопки вкладки
       var activeTab = $(this).attr("data-tab");
- 
+      var prevContent = tabsContentImg.filter(".active");
+      var newContent = $("[data-tab='" + activeTab + "']");
   
-      // Скрываем все контенты вкладок
       tabsContentImg.hide();
+      prevContent.removeClass("active");
   
-      // Находим контент вкладки, соответствующий выбранной кнопке, и показываем его
-      $("[data-tab='" + activeTab + "']").addClass("active").show();
-
+      if (newContent.hasClass("tab-img-content") && !newContent.hasClass("active")) {
+        newContent.find(".tab-img-content:first-child").addClass("active").show();
+      }
   
-      // Добавляем класс "active" к выбранной кнопке вкладки
+      newContent.show().addClass("active");
       tabsBtn.removeClass("active");
       $(this).addClass("active");
+  
+      activeContent = newContent; // Обновляем ссылку на последний активный контент
     });
-  });
-  
-  
-  
-  $(document).ready(function() {
-    var tabTimer;
-  
-  
-  
-    function stopTimer() {
-      clearInterval(tabTimer);
-    }
   
     $('.choiceTabsBtn').click(function() {
-      stopTimer();
-    
       var tab_id = $(this).attr('data-tab');
-    
+  
       $('.choiceTabsBtn').removeClass('active');
-      $('.choiceTabsContent').removeClass('active').hide(); // скрываем все контенты вкладок
-    
+      $('.choiceTabsContent').removeClass('active');
+      $('.tab-img-content').eq(0).addClass('active');
+  
       $(this).addClass('active');
-      $('[data-tab="' + tab_id + '"]').addClass('active').show(); // показываем выбранный контент вкладки
-    
+      var newContent = $('[data-tab="' + tab_id + '"]');
+      var newTabImgContent = newContent.find(".tab-img-content:first-child");
+  
+      if (newTabImgContent.length) {
+        newTabImgContent.show().addClass("active");
+      }
+  
+      newContent.addClass('active').show();
+      activeContent.removeClass('active'); // Скрываем последний активный контент
+      activeContent = newContent; // Обновляем ссылку на последний активный контент
     });
   });
-
-
+  
+  
 
   $(document).ready(function() {
   $('.articleSlider').slick({
