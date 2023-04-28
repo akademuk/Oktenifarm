@@ -1420,69 +1420,6 @@
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
     <script src="script/slick.min.js"></script>
     <script src="script/script.js"></script>
-    <script>
-        const burger = document.querySelector('.burger');
-        if (burger) {
-            burger.addEventListener('click', function () {
-                this.classList.toggle('open');
-                document.querySelector('.navBurger').classList.toggle('open');
-                document.querySelector('.body').classList.toggle('active');
-            });
-        }
-    
-        const openBurger = document.querySelector('.burger.open');
-        if (openBurger) {
-            openBurger.addEventListener('click', function () {
-                document.querySelector('.body').classList.remove('active');
-            });
-        }
-    </script>
-    
-
-    <script>
-$(document).ready(function() {
-    var animation = $('.whyChooseAnimation');
-    var animationOffset = animation.offset().top;
-    var windowHeight = $(window).height();
-
-    $(window).scroll(function() {
-        if (window.innerWidth >= 768) {
-            var scroll = $(window).scrollTop();
-            var whyChooseOffset = $('.wrapperAnimation').offset().top;
-            var animationPosition = (whyChooseOffset - windowHeight) + 700;
-
-            if (scroll > animationPosition) {
-                $('.wrapperAnimation').addClass('animation-slide');
-            } else {
-                $('.wrapperAnimation').removeClass('animation-slide');
-            }
-        }
-    });
-});
-
-
-    </script>
-
-<script>
-$(document).ready(function() {
-  var contentHeight = $('.window-content').outerHeight();
-
-  $('.toggle-btn').click(function() {
-    $('.fixed-window').toggleClass('hide');
-
-    if ($('.fixed-window').hasClass('hide')) {
-      $('.fixed-window').animate({ height: '50px' }, 300);
-    } else {
-      $('.fixed-window').animate({ height: contentHeight + 50 + 'px' }, 300);
-    }
-  });
-});
-
-
-
-</script>
-
-
 </body>
 
 </html>

@@ -1423,9 +1423,7 @@ header .header-wrapper {
     height: 69px;
     margin-right: 16px;
 }
-.tabsBtn-img2 {
-    width: 33% !important;
-}
+
 .choiceTabsContentCenterTextBtn .banner-center-btn2  {
     width: 50%;
     height: 69px;
@@ -2185,8 +2183,6 @@ footer .wrapper {
   .tab-img-content.active {
     display: block !important;
   }
-  
-
 
 
 
