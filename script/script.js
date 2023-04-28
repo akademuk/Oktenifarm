@@ -121,4 +121,81 @@ $(document).ready(function() {
     
     });
   });
-  
+
+
+
+  $(document).ready(function() {
+  $('.articleSlider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: true,
+    prevArrow: $('.articlePrev'),
+    nextArrow: $('.articleNext'),
+    appendDots: $('.articleDots'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          infinite: false,
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+});
+
+$(document).ready(function() {
+  $('.reviewsSlider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    prevArrow: $('.reviewsPrev'),
+    nextArrow: $('.reviewsNext'),
+    appendDots: $('.reviewsDots'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          infinite: false,
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+});
