@@ -14,6 +14,18 @@
 
 <body class="body">
 
+    <div class="fixed-window">
+        <button class="toggle-btn">
+          <img src="img/sliderArrow.svg" alt="">
+        </button>
+        <div class="window-content">
+            <div class="popapwindow-content">
+                <img src="img/popap.png" alt="">
+                Самолікування може бути шкідливим для вашого здоров'я</div>
+            <p>Важливо пам'ятати, що самолікування може завдати шкоди вашому здоров'ю. Навіть якщо ви ретельно вивчили інструкцію із застосування лікарських засобів, це не означає, що ви можете замінити візит до лікаря самолікуванням. Вся відповідальність за наслідки лікування без призначення лікаря лежить на вас.  У разі погіршення самопочуття просимо негайно звернутися до свого лікаря.</p>
+        </div>
+      </div>
+      
     <header>
         <div class="header-wrapper">
             <div class="header-logo">
@@ -1377,10 +1389,38 @@
         </div>
     </section>
 
-
-
-
-
+    <footer>
+        <div class="wrapper">
+            <div class="footerLeft">
+                <div class="footerLogo">
+                    <a href="#">
+                        <img src="img/footerLogo.png" alt="">
+                        Завжди <br> зі мною!
+                    </a>
+                </div>
+                <p>© 2023 | octenisept.com.ua | Всі права захищені.</p>
+            </div>
+            <div class="footerRight">
+                <div class="footerTel">
+                    <p>
+                        <img src="img/tel.svg" alt="tel">
+                        Гаряча лінія
+                    </p>
+                    <a href="tel:380441234567" style="margin-bottom: 17.5px;">+38 044 123 45 67</a>
+                </div>
+                <div class="footerMail">
+                    <p>
+                        <img src="img/mail.svg" alt="tel">
+                        Напишіть нам
+                    </p>
+                    <a href="mailto:support@name.com">support@name.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="logoCompany">
+            <img src="img/Label Agency.png" alt="">
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
@@ -1422,6 +1462,24 @@ $(document).ready(function() {
 
     </script>
 
+<script>
+$(document).ready(function() {
+  var contentHeight = $('.window-content').outerHeight();
+
+  $('.toggle-btn').click(function() {
+    $('.fixed-window').toggleClass('hide');
+
+    if ($('.fixed-window').hasClass('hide')) {
+      $('.fixed-window').animate({ height: '50px' }, 300);
+    } else {
+      $('.fixed-window').animate({ height: contentHeight + 50 + 'px' }, 300);
+    }
+  });
+});
+
+
+
+</script>
 
 
 </body>
