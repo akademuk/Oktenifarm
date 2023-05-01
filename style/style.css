@@ -1275,7 +1275,7 @@ header .header-wrapper {
     height: 120.83px;
     position: absolute;
     left: 244px;
-    top: -5px;
+    top: -3px;
     z-index: -1;
 
 }
@@ -1314,8 +1314,8 @@ header .header-wrapper {
     position: absolute;
     width: 266.71px;
     height: 160.1px;
-    left: -247px;
-    top: -20px;
+    left: -256px;
+    top: -23px;
     z-index: -1;
 }
 
@@ -1327,7 +1327,7 @@ header .header-wrapper {
     position: absolute;
     width: 209.15px;
     height: 106.08px;
-    left: -214px;
+    left: -203px;
     top: -16px;
     z-index: -1;
 }
@@ -1340,8 +1340,8 @@ header .header-wrapper {
     position: absolute;
     width: 192.15px;
     height: 106.08px;
-    left: -170px;
-    top: -11px;
+    left: -185px;
+    top: -12px;
     z-index: -1;
 }
 
