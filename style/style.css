@@ -1488,6 +1488,13 @@ margin-top: 15px;
     width: 50%;
     height: 69px;
 }
+.banner-center-btn2:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transition: all 0.3s;
+}
+.banner-center-btn2{
+    transition: all 0.3s;
+}
 .tab-btn-img {
     display: flex;
     flex-direction: row;
@@ -1834,6 +1841,18 @@ margin-top: 15px;
     text-transform: uppercase;
     color: #2373BA;
     text-decoration: none;
+    transition: all 0.3s;
+}
+.articleTopNavigation > a:hover {
+    transition: all 0.3s;
+    color: #4789D1;
+}
+* {
+    outline: none !important;
+}
+.articleTopNavigation > a:active {
+    transition: all 0.3s;
+    color: #0461A3;
 }
 .articleTopNavigation > a img {
     display: none;
@@ -1899,6 +1918,15 @@ margin-top: 15px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: all 0.3s;
+}
+.articleSliderItem > a:hover {
+    background: #4789D1;
+    transition: all 0.3s;
+}
+.articleSliderItem > a:active {
+    background: #0461A3;
+    transition: all 0.3s;
 }
 .articleSliderItem  {
     margin: 0;
@@ -2062,8 +2090,17 @@ margin-top: 15px;
     text-transform: uppercase;
     color: #2373BA;
     display: flex;
+    transition: all 0.3s;
     align-items: center;
     text-decoration: none;
+}
+.reviewsSliderIttem > a:hover {
+    color: #4789D1;
+    transition: all 0.3s;
+}
+.reviewsSliderIttem > a:active {
+    color: #0461A3;
+    transition: all 0.3s;
 }
 .articleTablet {
     display: none;
