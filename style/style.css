@@ -4467,6 +4467,26 @@ content: none;
     .articlePage .articleSliderItem {
         width:100%;
     }
+    .tab-content .tab-content-text {
+        min-height: 195px;
+    }
+    .tab-content2s .tab-content-text {
+        min-height: 150px;
+        height: 150px;
+    }
+    .tab-content:nth-of-type(2) .tab-content-text{
+        min-height: 165px;
+        height: 165px;
+    }
+    .tab-content:nth-of-type(2) .tab-content-img{
+        height: calc(100% - 165px);
+    }
+    .modalSectionImg img{
+        max-width: 100%;
+    }
+    .modalWindowsContent {
+        overflow-x: hidden;
+    }
 }
 
 /* //max-width: 576px */

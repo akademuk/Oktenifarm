@@ -262,12 +262,13 @@ $(document).ready(function () {
     $('.fixed-window').toggleClass('hide');
 
     if ($('.fixed-window').hasClass('hide')) {
-      $('.fixed-window').animate({ height: '50px' }, 300);
+      $('.fixed-window').animate({ height: 'auto' }, 300);
     } else {
-      $('.fixed-window').animate({ height: contentHeight + 50 + 'px' }, 300);
+      $('.fixed-window').animate({ height: 'auto' }, 300);
     }
   });
 });
+
 /* ------------------------------------------------------------------ */
 
 
