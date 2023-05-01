@@ -1397,7 +1397,14 @@ header .header-wrapper {
     border-bottom: transparent;
 }
 .tab-img-content.active {
+    height: 424px;
     margin-bottom: 32px;
+}
+.tab-img-content.active img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .tabsBtn-img {
     display: flex;
@@ -2440,7 +2447,9 @@ content: none;
 .articlePagePagination li:nth-last-of-type(1) {
     margin-right: 0;
 }
-
+.tab-img-content {
+    display: none !important;
+}
 
 
 
@@ -4078,6 +4087,23 @@ content: none;
         background-image: url(../img/whyChooseBac.png), url(../img/mobile.png), url(../img/Frame109.png);
         background-position: center, top, center;
         background-size: contain, cover, 50%;
+    }
+    .tab-content .tab-content-img{
+        height: calc(100% - 162px);
+    }
+    .tab-content .tab-content-text{
+        height:162px;
+        min-height: 162px;
+    }
+    .tab-content2s .tab-content-img{
+        height: calc(100% - 150px);
+    }
+    .tab-content2s .tab-content-text{
+        height:150px;
+        min-height: 150px;
+    }
+    .banner-tabs-container {
+        height: 539px;
     }
 }
 
