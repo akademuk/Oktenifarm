@@ -428,7 +428,10 @@ margin-top: 15px;
     border: 1px solid #2775BC;
     border-radius: 4px;
 }
-
+.familyTabs {
+    display: flex;
+    justify-content: space-between;
+}
 .tab-btn2 {
     font-family: 'Ubuntu', sans-serif;
     width: 16.6%;
@@ -443,6 +446,11 @@ margin-top: 15px;
     border: none;
     border-left: 1px solid #2775BC;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.tab-btn2:hover {
+    transition: all 0.3s;
+    background: #4789D1;
 }
 
 .tab-btn2.active {
@@ -906,8 +914,17 @@ margin-top: 15px;
 .familyContentSectionLeft {
     max-width: 546px;
     position: relative;
+    border-radius: 4px;
+    overflow: hidden;
 }
-
+.open-modal:hover {
+    background: #ACC8F6;
+    transition: all 0.3s;
+}
+.open-modal:active {
+    background: #4789D1;
+    transition: all 0.3s;
+}
 .familyContentSectionRight {
     max-width: 451px;
 }
@@ -1191,7 +1208,7 @@ margin-top: 15px;
     width: 70px;
     height: 70px;
     position: absolute;
-    left: -35px;
+    left: 7px;
     top: -35px;
     z-index: -1;
 }
@@ -1389,7 +1406,26 @@ margin-top: 15px;
     top: 0;
     left:calc(100% - 1138px);
 }
-
+.choiceTabsBtn {
+    transition: all 0.3s;
+}
+.choiceTabsBtn:hover {
+    background: #4789D1;
+    transition: all 0.3s;
+    color: #FFFFFF;
+}
+.choiceTabsBtn:hover img {
+    transition: all 0.3s;
+    filter: invert(87%) sepia(86%) saturate(0%) hue-rotate(148deg) brightness(150%);
+}
+.choiceTabsBtn:hover p {
+    color: #fff;
+    transition: all 0.3s;
+}
+.choiceTabsBtn:hover:after {
+    transition: all 0.3s;
+    filter: invert(87%) sepia(86%) saturate(0%) hue-rotate(148deg) brightness(150%);
+}
 .choiceTabsBtn.active {
     background: transparent;
     color: #FFFFFF;
@@ -1598,7 +1634,7 @@ margin-top: 15px;
 }
 .cards::before {
     content: "";
-    background: url(../img/cardbefore.png);
+    background: url(../img/cardBefore.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -1617,9 +1653,7 @@ margin-top: 15px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.cardsContainerIcon img {
-    transition: all 0.3s; 
-}
+
 .cardsContainer h3{
     font-weight: 700;
     font-size: 22px;
@@ -1667,8 +1701,7 @@ margin-top: 15px;
     transition: all 0.3s;
 }
 .cardsContainer:hover img{
-    transition: all 0.3s;
-    filter: invert(19%) sepia(61%) saturate(4153%) hue-rotate(191deg) brightness(92%) contrast(97%);
+    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(2721%) hue-rotate(190deg) brightness(97%) contrast(97%);
 }
 .article {
     padding: 128px 0;
@@ -2332,6 +2365,14 @@ color: #FFFFFF;
 }
 .modalSection {
     padding: 16px;
+    transition: all 0.3s;
+}
+.modalSection:hover{
+    background: #8AB3EE;
+    transition: all 0.3s;
+}
+.modalSection:hover .modalSectionImg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(36deg) brightness(150%) contrast(102%);
 }
 .modalSectionImg img {
     margin-bottom: 16px;
@@ -2446,9 +2487,6 @@ content: none;
 }
 .articlePagePagination li:nth-last-of-type(1) {
     margin-right: 0;
-}
-.tab-img-content {
-    display: none !important;
 }
 .pageArticle{
     background: #F2F4F8;
@@ -3363,7 +3401,7 @@ content: none;
         font-size: 13px;
         line-height: 130%;
     }
-    .tab-img-content.active {
+    .tab-img-content {
         margin-bottom: 16px;
     }
     .tab-btn-img {
@@ -3774,6 +3812,10 @@ content: none;
     }
     .banner-tabs-container {
         height: 539px;
+    }
+    .tab-img-content.active {
+        height: 250px;
+        margin-bottom: 16px;
     }
 }
 
@@ -4274,7 +4316,7 @@ content: none;
     .choiceTabsContentCenterText h3 {
         display: none;
     }
-    .tab-img-content.active {
+    .tab-img-content {
         margin-bottom: 32px;
     }
     .choiceTabsContentCenterText p {
