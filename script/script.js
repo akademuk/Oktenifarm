@@ -133,7 +133,7 @@ $(document).ready(function () {
 /* Слайдер Статьи */
 $(document).ready(function () {
   $('.articleSlider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
@@ -174,7 +174,7 @@ $(document).ready(function () {
 /* Слайдер Отзывы */
 $(document).ready(function () {
   $('.reviewsSlider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
