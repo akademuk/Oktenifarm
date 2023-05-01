@@ -145,6 +145,7 @@ header .header-wrapper {
 
 .tab-btn img {
     min-height: 55px;
+    margin-bottom: 8px;
 }
 
 .tab-btn span {
