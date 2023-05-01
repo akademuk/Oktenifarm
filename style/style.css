@@ -506,7 +506,15 @@ header .header-wrapper {
 }
 
 .tab-content.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.tab-content-img {
+    height: 100%;
+}
+.tab-content {
+    height: 539px;
+    overflow: hidden;
 }
 
 .image-container {
@@ -2220,6 +2228,7 @@ footer .wrapper {
 }
 .modalWindowsContentLeft {
     width: 546px;
+    background: #2373BA;
 }
 .modalWindowsContentRight {
     width: 570px;
@@ -2358,6 +2367,10 @@ color: #FFFFFF;
         max-width: 1540px;
         margin: 0 auto;
     }
+    .tab-content-text-tittle {
+        min-width: 150px;
+        width: 150px;
+    }
     .banner-right {
         height: 679px;
     }
@@ -2399,7 +2412,9 @@ color: #FFFFFF;
         padding-left: 0;
         padding-right: 0;
     }
-
+    .tab-content {
+        height: 100%;
+    }
 }
 
 /* //max-width: 1920px */
@@ -2548,10 +2563,6 @@ color: #FFFFFF;
         display: none;
     }
 
-    .tab-content-img {
-        height: 382px;
-    }
-
     .banner-center-btn1 {
         width: 147px;
         height: 50px;
@@ -2601,7 +2612,12 @@ color: #FFFFFF;
 
 
 /* responsive  */
-
+@media (min-height: 840px) {
+    .modalWindowsContent {
+        overflow-y: hidden;
+        height: 744px;
+    }
+}
 @media (max-width: 1200px) {
     .banner {
         padding: 32px 0;
@@ -3540,6 +3556,49 @@ color: #FFFFFF;
     .whyChooseSection .whyChooseTittle::before {
         content: none;
     }
+    .tab-content-text-tittle {
+        margin-right: 16px;
+    }
+    .tab-content-text {
+        min-height: 180px;
+        box-sizing: border-box;
+    }
+    .whyChoose {
+        background-image: url(../img/whyChooseBac.png), url(../img/BackgroundPattern.png), url(../img/Frame109.png);
+        background-repeat: repeat,no-repeat, no-repeat !important;
+        background-size: contain, 100%, 50%;
+    }
+    .choiceTabsContentCenterTextBtn .banner-center-btn1 img{
+        display: flex;
+    }
+    .choiceTabsContentCenterTextBtn .banner-center-btn2 img{
+        display: flex;
+    }
+    .choiceTabsBtn:nth-of-type(2)::after {
+        background-size: cover;
+    }
+    .choiceTabsBtn:nth-of-type(3)::after {
+        background-size: cover;
+    }
+    .cardsContainer h3 br {
+        display: none;
+    }
+    .articleDots .slick-dots li {
+        width: 6px;
+        height: 6px;
+    }
+    .articleDots .slick-dots .slick-active {
+        width: 16px;
+        height: 6px;
+    }
+    .reviewsDots .slick-dots li{
+        width: 6px;
+        height: 6px;
+    }
+    .reviewsDots .slick-dots .slick-active {
+        width: 16px;
+        height: 6px;
+    }
 }
 
 /* //max-width: 1200px */
@@ -3570,7 +3629,9 @@ color: #FFFFFF;
     .header-logo a span {
         font-size: 7.17437px;
     }
-
+    .banner-tabs-container {
+        height: auto;
+    }
     .banner .header-wrapper {
         padding: 0 32px;
     }
@@ -3897,6 +3958,11 @@ color: #FFFFFF;
     .whyChooseLeft {
         width: 70%;
     }
+    .whyChoose {
+        background-image: url(../img/whyChooseBac.png), url(../img/mobile.png), url(../img/Frame109.png);
+        background-position: center, top, center;
+        background-size: contain, cover, 50%;
+    }
 }
 
 /* //max-width: 768px */
@@ -4063,6 +4129,37 @@ color: #FFFFFF;
     }
     .reviewsDots {
         padding-right: 0;
+    }
+    .banner-right {
+        height: auto;
+    }
+    .whyChooseLeft h2 {
+        width: 269px;
+    }
+    .whyChoose {
+        background-size: contain, cover, 100%;
+    }
+    .whyChooseTittle p {
+        width: 100%;
+    }
+    .tabsBtn-img {
+        display: flex;
+    }
+    .choiceTabsContentCenterTextBtn {
+        flex-direction: column;
+    }
+    .choiceTabs {
+        height: 777px;
+    }
+    .choiceTabsContentCenterTextBtn button {
+        width: 100% !important;
+        margin-right: 0;
+    }
+    .choiceTabsContentCenterText h3 {
+        display: block;
+    }
+    .choiceTabsContentCenterText p {
+        display: block;
     }
 }
 
