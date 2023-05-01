@@ -3724,6 +3724,23 @@ content: none;
     .articlePage .articleSliderItem {
         width: 49%;
     }
+    .tab-content .tab-content-img{
+        height: calc(100% - 162px);
+    }
+    .tab-content .tab-content-text{
+        height:162px;
+        min-height: 162px;
+    }
+    .tab-content2s .tab-content-img{
+        height: calc(100% - 150px);
+    }
+    .tab-content2s .tab-content-text{
+        height:150px;
+        min-height: 150px;
+    }
+    .banner-tabs-container {
+        height: 539px;
+    }
 }
 
 /* //max-width: 1200px */
