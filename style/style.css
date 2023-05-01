@@ -2347,6 +2347,8 @@ footer .wrapper {
     background: #2373BA;
     height: auto;
     padding: 40px 37px 31px 37px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .modalLogoTop {
     display: flex;
@@ -4192,7 +4194,7 @@ content: none;
         display: block;
         width: 200px;
         height: 200px;
-        right: -30px;
+        right: 0;
     }
     .modalWindowsContentRight h2 {
         margin-top: 20px;
