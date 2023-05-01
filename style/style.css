@@ -2356,6 +2356,109 @@ color: #FFFFFF;
     height: 18px;
     margin-left: 8px;
 }
+.articlePage::after {
+content: none;
+}
+.articlePageNvigation {
+    display: flex;
+    margin-bottom: 32px;
+    align-items: center;
+}
+.articlePageNvigation1 {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2373BA;
+    padding-right: 16px;
+    border-right: 1px solid #ACC8F6;
+}
+.articlePageTop h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 112.5%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #003B66;
+    margin-bottom: 32px;
+}
+.articlePageNvigation2 {
+    padding-left: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4B4B4B;
+}
+.articlePage {
+    padding: 64px 0;
+}
+.articlePageContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.articlePage .articleSliderItem {
+    width: 24%;
+    margin: 0;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+.articlePagePagination {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    justify-content: center;
+}
+.articlePagePagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #2373BA;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    color: #FFFFFF;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.articlePagePagination li:hover {
+    background: #4B4B4B;
+    transition: all 0.3s;
+}
+.articlePagePagination li:nth-of-type(1) img {
+    transform: rotate(-180deg);
+}
+.articlePagePagination li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3600,6 +3703,18 @@ color: #FFFFFF;
         width: 16px;
         height: 6px;
     }
+    .articlePage .wrapper {
+        max-width: 100%;
+        padding: 0 64px;
+        box-sizing: border-box;
+    }
+    .articlePageTop h2 {
+        font-size: 22px;
+        line-height: 112.5%;
+    }
+    .articlePage .articleSliderItem {
+        width: 49%;
+    }
 }
 
 /* //max-width: 1200px */
@@ -4161,6 +4276,12 @@ color: #FFFFFF;
     }
     .choiceTabsContentCenterText p {
         display: block;
+    }
+    .articlePage .wrapper {
+        padding: 0 16px;
+    }
+    .articlePage .articleSliderItem {
+        width:100%;
     }
 }
 

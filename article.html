@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <div class="fixed-window">
+        <button class="toggle-btn">
+          <img src="img/sliderArrow.svg" alt="">
+        </button>
+        <div class="window-content">
+            <div class="popapwindow-content">
+                <img src="img/popap.png" alt="">
+                Самолікування може бути шкідливим для вашого здоров'я</div>
+            <p>Важливо пам'ятати, що самолікування може завдати шкоди вашому здоров'ю. Навіть якщо ви ретельно вивчили інструкцію із застосування лікарських засобів, це не означає, що ви можете замінити візит до лікаря самолікуванням. Вся відповідальність за наслідки лікування без призначення лікаря лежить на вас.  У разі погіршення самопочуття просимо негайно звернутися до свого лікаря.</p>
+        </div>
+    </div>
+
+    <div class="modalWindows">
+        <div class="modalWindowsContent">
+            <div class="modalWindowsContentLeft">
+                <div class="modalWindowsContentLeftImg">
+                    <img src="img/modalImg.png" alt="">
+                </div>
+                <div class="modalWindowsContentLeftContent">
+                    <div class="modalLogo">
+                        <div class="modalLogoTop">
+                            <img src="img/modalLogo.png" alt="">
+                            <p>Завжди <br> зі мною!</p>
+                        </div>
+                        <p>Незмінний помічник <br>
+                            у кожній родині</p>
+                    </div>
+                    <div class="modalLogoImg">
+                        <img src="img/modalImgLogo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modalWindowsContentRight">
+                <button class="close-modal">
+                    <img src="img/close.svg" alt="">
+                </button>
+                <h2>Офіційні дистриб'ютори «Октенісепт» в Україні</h2>
+                <div class="modalSection">
+                    <div class="modalSectionImg">
+                        <img src="img/modalSectionImg1.png" alt="">
+                    </div>
+                    <p>Aгрегатор аптек, медичних препаратів, товарів для гігієни, здоров'я та краси</p>
+                    <a href="#">Перейти на сайт</a>
+                </div>
+
+                <div class="modalSection">
+                    <div class="modalSectionImg">
+                        <img src="img/modalSectionImg2.png" alt="">
+                    </div>
+                    <p>Тисячі товарів, відстеження замовлень та багато іншого на кінчиках пальців</p>
+                    <a href="#">Перейти на сайт</a>
+                </div>
+
+                <div class="modalSection">
+                    <div class="modalSectionImg">
+                        <img src="img/modalSectionImg3.png" alt="">
+                    </div>
+                    <p>Перший інноваційний майданчик для бронювання та організації доставки товарів аптечного асортименту</p>
+                    <a href="#">Перейти на сайт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <header>
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="">
+                    <span>Завжди <br> зі мною!</span>
+                </a>
+            </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li class="bold">
+                        <a href="index.html">
+                            Головна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Відгуки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Де придбати
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-logo-line">
+                <a href="#">
+                    <img src="img/LogoLibrary.png" alt="">
+                    <p>Швидка допомога <br> від 1 хвилини</p>
+                </a>
+            </div>
+            <div class="burger-menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>menu</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navBurger">
+        <div class="scroll">
+            <ul>
+                <li><a href="#" class="linkBurger" onclick="closeBurger()">Головна</a></li>
+                <li><a href="#" class="linkBurger" onclick="closeBurger()">Про нас</a></li>
+                <li><a href="#" class="linkBurger" onclick="closeBurger()">Відгуки</a></li>
+                <li><a href="#" class="linkBurger" onclick="closeBurger()">Де придбати</a></li>
+            </ul>
+            <div class="navBurgerContact">
+                <p>
+                    <img src="img/tel.svg" alt="tel">
+                    Гаряча лінія
+                </p>
+                <a href="tel:380441234567" style="margin-bottom: 17.5px;">+38 044 123 45 67</a>
+                <p>
+                    <img src="img/mail.svg" alt="tel">
+                    Напишіть нам
+                </p>
+                <a href="mailto:support@name.com">support@name.com</a>
+                <img src="img/logoBurger.png" alt="">
+                <p class="copirite">© 2023 | octenisept.com.ua | Всі права захищені.</p>
+                <img src="img/Label Agency.png" alt="" style="margin-left: auto;">
+            </div>
+        </div>
+    </nav>
+
+    <section class="article articlePage">
+        <div class="wrapper">
+            <div class="articlePageTop">
+                <div class="articlePageNvigation">
+                    <a href="index.html" class="articlePageNvigation1">Головна</a>
+                    <a href="#" class="articlePageNvigation2">Блог</a>
+                </div>
+                <h2>статті</h2>
+            </div>
+            <div class="articlePageContainer">
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem1.png" alt="">
+                    </div>
+                    <h3 class="SliderTittle">Як лікувати стоматит у дітей та дорослих?</h3>
+                    <div class="articleSliderItemText">
+                        Рецидивні виразки в роті - неприємне і хворобливе захворювання, що вражає як дорослих так і дітей.  Як ефективно побороти стоматит, що використовувати?
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem2.png" alt="">
+                    </div>
+                    <h3>Як доглядати за пупком новонародженого?</h3>
+                    <div class="articleSliderItemText">
+                        Пуповина після перерізання  дуже сприйнятлива до інфікування. Тому потрібно ставитися до пуповини, як до рани, що загоюється, і особливо потрібно дбайти про її чистоту.
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem3.png" alt="">
+                    </div>
+                    <h3 class="SliderTittle">ЯК ВІДБУВАЄТЬСЯ ЗАГОЄННЯ РАН І ЩО ПРИСКОРЮЄ ЗАГОЄННЯ?</h3>
+                    <div class="articleSliderItemText">
+                        Процес загоєння ран зазвичай займає до 10 днів. У цей час організм активно працює над усуненням ушкоджень.
+                        Незалежно від того, чи маєте ви справу з подряпиною від котячих пазурів, порізом від розбитого скла або подряпиною на коліні під час тренування, ваша рана починає гоїтися... як тільки вона пошкоджена. По-перше, вона очищається – змиваються залишки клітин, мікроорганізми та шкідливі продукти обміну.
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem1.png" alt="">
+                    </div>
+                    <h3>Що використовувати при поранені – порівнюємо антисептичні речовини.
+                    </h3>
+                    <div class="articleSliderItemText">
+                        Деякі дезінфікуючі засоби не такі безпечні та ефективні, як вважалося раніше. Антисептики призначені для використання при ранах та опіках, а також для шкіри перед процедурами. Ці препарати знищують мікроби та пригнічують їх зростання. Вони добре проникають через біоплівку, тобто шар бактерій, який, утворюючись, перешкоджає загоєнню рани.
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem1.png" alt="">
+                    </div>
+                    <h3>Що використовувати при поранені – порівнюємо антисептичні речовини.
+                    </h3>
+                    <div class="articleSliderItemText">
+                        Деякі дезінфікуючі засоби не такі безпечні та ефективні, як вважалося раніше. Антисептики призначені для використання при ранах та опіках, а також для шкіри перед процедурами. Ці препарати знищують мікроби та пригнічують їх зростання. Вони добре проникають через біоплівку, тобто шар бактерій, який, утворюючись, перешкоджає загоєнню рани.
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem1.png" alt="">
+                    </div>
+                    <h3>Що використовувати при поранені – порівнюємо антисептичні речовини.
+                    </h3>
+                    <div class="articleSliderItemText">
+                        Деякі дезінфікуючі засоби не такі безпечні та ефективні, як вважалося раніше. Антисептики призначені для використання при ранах та опіках, а також для шкіри перед процедурами. Ці препарати знищують мікроби та пригнічують їх зростання. Вони добре проникають через біоплівку, тобто шар бактерій, який, утворюючись, перешкоджає загоєнню рани.
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem1.png" alt="">
+                    </div>
+                    <h3>Що використовувати при поранені – порівнюємо антисептичні речовини.
+                    </h3>
+                    <div class="articleSliderItemText">
+                        Деякі дезінфікуючі засоби не такі безпечні та ефективні, як вважалося раніше. Антисептики призначені для використання при ранах та опіках, а також для шкіри перед процедурами. Ці препарати знищують мікроби та пригнічують їх зростання. Вони добре проникають через біоплівку, тобто шар бактерій, який, утворюючись, перешкоджає загоєнню рани.
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+
+                <div class="articleSliderItem">
+                    <div class="articleSliderItemImg">
+                        <img src="img/articleSliderItem1.png" alt="">
+                    </div>
+                    <h3>Що використовувати при поранені – порівнюємо антисептичні речовини.
+                    </h3>
+                    <div class="articleSliderItemText">
+                        Деякі дезінфікуючі засоби не такі безпечні та ефективні, як вважалося раніше. Антисептики призначені для використання при ранах та опіках, а також для шкіри перед процедурами. Ці препарати знищують мікроби та пригнічують їх зростання. Вони добре проникають через біоплівку, тобто шар бактерій, який, утворюючись, перешкоджає загоєнню рани.
+                    </div>
+                    <a href="#">Читати далі</a>
+                </div>
+            </div>
+            <ul class="articlePagePagination">
+                <li>
+                    <img src="img/sliderArrow.svg" alt="">
+                </li>
+                <li>
+                    1
+                </li>
+                <li>
+                   2
+                </li>
+                <li>
+                   3
+                </li>
+                <li>
+                    <img src="img/sliderArrow.svg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footerLeft">
+                <div class="footerLogo">
+                    <a href="#">
+                        <img src="img/footerLogo.png" alt="">
+                        Завжди <br> зі мною!
+                    </a>
+                </div>
+                <p>© 2023 | octenisept.com.ua | Всі права захищені.</p>
+            </div>
+            <div class="footerRight">
+                <div class="footerTel">
+                    <p>
+                        <img src="img/tel.svg" alt="tel">
+                        Гаряча лінія
+                    </p>
+                    <a href="tel:380441234567" style="margin-bottom: 17.5px;">+38 044 123 45 67</a>
+                </div>
+                <div class="footerMail">
+                    <p>
+                        <img src="img/mail.svg" alt="tel">
+                        Напишіть нам
+                    </p>
+                    <a href="mailto:support@name.com">support@name.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="logoCompany">
+            <img src="img/Label Agency.png" alt="">
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
+    <script src="script/slick.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
