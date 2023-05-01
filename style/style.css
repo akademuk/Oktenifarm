@@ -179,7 +179,7 @@ header .header-wrapper {
     max-height: 4px;
     -webkit-animation: pulsing 2s infinite;
     animation: pulsing 2s infinite;
-    margin-right: 8px;
+    margin-right: 14px;
 }
 
 @-webkit-keyframes pulsing {
@@ -2156,12 +2156,12 @@ footer .wrapper {
         background: #42526E;
         border-radius: 4px;
     }
-  .hide {
-    height: 0 !important;
-    padding-top: 0;
-    padding-bottom: 0;
-    transition: all 0.3s ease-in-out;
-  }
+    .hide {
+        height: 0 !important;
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: all 0.3s ease-in-out;
+    }
   
   .toggle-btn {
     position: absolute;
