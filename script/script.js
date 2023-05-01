@@ -7,7 +7,7 @@ $(document).ready(function () {
       var activeTab = $('.tab-btn.active');
       var nextTab = activeTab.next('.tab-btn').length ? activeTab.next('.tab-btn') : $('.tab-btn:first');
       nextTab.click();
-    }, 999999000);
+    }, 3000);
   }
 
   function stopTimer() {

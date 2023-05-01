@@ -2450,15 +2450,49 @@ content: none;
 .tab-img-content {
     display: none !important;
 }
-
-
-
-
-
-
-
-
-
+.pageArticle{
+    background: #F2F4F8;
+}
+.pageArticle .wrapper {
+    max-width: 1116px;
+    margin: 0 auto;
+}
+.pageArticleContainer {
+    display: flex;
+}
+.pageArticleContainerLeft {
+    width: 641px;
+    margin-right: 24px;
+}
+.pageArticleContainerRight {
+    width: 451px;
+}
+.pageArticle {
+    padding-top: 64px;
+}
+.pageBlog {
+    color: #2373BA;
+    padding-right: 16px;
+    border-right: 1px solid #ACC8F6;
+}
+.pageArticleContainerLeft h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 112.5%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #003B66;
+    margin-bottom: 64px;
+}
+.pageArticleText {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F4C63;
+}
+.pageArticleList1 {
+    margin-top: 48px;
+}
 
 
 
