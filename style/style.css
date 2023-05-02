@@ -2414,7 +2414,7 @@ height: 26.74px;
   }
   .modalWindowsInfoScroll {
     overflow-y: scroll;
-    height: calc(100% - 25vh);
+    height: 460px;
     width: 900px;
     margin: 0 auto;
     padding-right: 20px;
@@ -2920,12 +2920,15 @@ content: none;
 }
 .pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn {
     width: 25%;
-    padding-top:0;
     height: 100%;
     border-bottom: 0;
     font-size: 16px;
-    padding-top: 60px;
     border-right: 4px solid #2373BA;
+    padding: 7px;
+    padding-top: 60px;
+}
+.choiceTabsBtn::after {
+    width: 100% !important;
 }
 .pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn:nth-last-of-type(1) {
     border-right: 0;
@@ -2936,13 +2939,102 @@ content: none;
 }
 .pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn p {
     font-size: 22px;
-line-height: 130%;
+    line-height: 130%;
 }
 .pageArticleChoiceTabs .choiceTabsContentCenter {
     margin-left: 0;
     padding: 31px;
     box-sizing: border-box;
 }
+
+.pageArticleChoiceTabs .choiceTabsContentCenter {
+    width: 100%;
+    min-width: 100%;
+}
+.pageArticleChoiceTabs .choiceTabsContentLeft {
+    display: none;
+}
+.pageArticleChoiceTabs .tabs-img-container {
+    height: 275px;
+    margin-bottom: 32px;
+}
+.pageArticleChoiceTabs .tabs-img-container .tab-img-content {
+    height: 275px;
+}
+.pageArticleChoiceTabs .choiceTabsContentCenterTextBtn button {
+    height: 50px !important;
+    font-size: 13px;
+}
+.pageArticleChoiceTabs .tabs-img-container .tab-img-content img {
+    height: 275px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1920px) {
     .header-wrapper {
@@ -3333,6 +3425,9 @@ line-height: 130%;
         overflow-y: scroll;
         overflow-x: hidden;
         height: 744px;
+    }
+    .modalWindowsInfoContent {
+        height: 744px; 
     }
 }
 @media (min-height: 840px) and (max-width: 992px) {
@@ -4393,6 +4488,18 @@ line-height: 130%;
         transform: none;
         top: 0 !important;
         right: 0 !important;
+    }
+    .pageArticleContainer {
+        flex-direction: column;
+    }
+    .pageArticleContainerLeft {
+        margin-right: 0;
+        width: 100%;
+        padding: 0 64px;
+        box-sizing: border-box;
+    }
+    .pageArticle .wrapper .articlePageTop {
+        padding: 0 64px;
     }
 }
 
