@@ -288,3 +288,27 @@ $(document).ready(function () {
     body1.removeClass("active");
   });
 });
+
+
+
+
+$(document).ready(function () {
+  var openModalBtn = $(".banner-center-btn2");
+  var modal2 = $(".modalWindowsInfo");
+  var closeModalBtn = $(".modalWindowsInfoClose");
+  var closeModalBtn2 = $(".modalClose2");
+  var body1 = $(".body");
+  openModalBtn.on("click", function () {
+    modal2.addClass("active");
+    body1.addClass("active");
+  });
+  closeModalBtn.on("click", function () {
+    modal2.removeClass("active");
+    body1.removeClass("active");
+  });
+  closeModalBtn2.on("click", function () {
+    modal2.removeClass("active");
+    body1.removeClass("active");
+  });
+});
+

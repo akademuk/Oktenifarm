@@ -2371,6 +2371,82 @@ height: 26.74px;
     margin-left: 5px;
     margin-bottom: -10px;
 }
+/* Скрыть модальное окно по умолчанию */
+.modalWindowsInfo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  .modalWindowsInfo.active {
+    display: block;
+  }
+  /* Стили для содержимого модального окна */
+  .modalWindowsInfoContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F2F4F8;
+    border-radius: 4px;
+    width: 1116px;
+    height: 90vh;
+    overflow: hidden;
+  }
+  .modalWindowsInfoScroll {
+    overflow-y: scroll;
+    height: calc(100% - 25vh);
+    width: 900px;
+    margin: 0 auto;
+    padding-right: 20px;
+  }
+  .modalWindowsInfoContent h2 {
+    max-width: 900px;
+    margin: 0 auto  16px auto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #30394B;
+    padding-bottom: 16px;
+    border-bottom:  2px solid #D8DDE9;
+  }
+  .modalWindowsInfoText h3,
+  .modalWindowsInfoText h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F4C63;
+    margin-bottom: 8px;
+  }
+  .modalWindowsInfoText p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #3F4C63;
+    margin-bottom: 16px;
+  }
+  .modalWindowsInfoText ul {
+    margin-bottom: 16px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+  .modalWindowsInfoText ul li {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #3F4C63;
+  }
+  /* Стили для кнопки закрытия модального окна */
+  .modalWindowsInfoClose {
+    display: block;
+    margin-top: 20px;
+  }
 .modalLogo > p {
     font-weight: 700;
 font-size: 12px;
@@ -2401,6 +2477,109 @@ color: #FFFFFF;
     position: relative;
 }
 .close-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #2373BA;
+    border-radius: 4px;
+    border: none;
+    margin-left: auto;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    margin-top: 0;
+}
+.blueContainer {
+    padding: 16px;
+    background: #4789D1;
+    box-sizing: border-box;
+     color: #fff;
+     margin-bottom: 16px;
+}
+.blueContainer h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.blueContainer p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.text1 {
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #3F4C63;
+    margin-bottom: 16px;
+}
+.modalWindowsInfoClose {
+    cursor: pointer;
+}
+.modalWindowsInfoBtn {
+    padding-top: 27px;
+    border-top: 2px solid #D8DDE9;
+    max-width: 900px;
+    margin: 12px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.modalWindowsInfoBtn button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    height: 48px;
+    background: #2373BA;
+    border-radius: 4px;
+    border: none;
+    margin-right: 24px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.modalWindowsInfoBtn a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 233px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #393939;
+    text-decoration: none;
+}
+.modalWindowsInfoBtn a img {
+    margin-left: 10px;
+}
+.modalWindowsInfoBtn button img {
+    margin-left: 11px;
+}
+.modalWindowsInfoContent {
+    position: relative;
+    padding: 64px 0 45px 0;
+    box-sizing: border-box;
+}
+.modalWindowsInfoClose{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -3878,6 +4057,21 @@ content: none;
         height: 250px;
         margin-bottom: 16px;
     }
+    .modalWindowsInfoContent {
+        width: 90%;
+        padding: 64px;
+        box-sizing: border-box;
+    }
+    .modalWindowsInfoScroll {
+        width: 100%;
+    }
+    .modalWindowsInfoContent h2 {
+        max-width: 100%;
+        padding-right: 50px;
+    }
+    .modalWindowsInfoBtn {
+        max-width: 100%;
+    }
 }
 
 /* //max-width: 1200px */
@@ -4488,6 +4682,38 @@ content: none;
     }
     .modalWindowsContent {
         overflow-x: hidden;
+    }
+    .modalWindowsInfoContent {
+        padding: 16px;
+        padding-top: 80px;
+    }
+    .modalWindowsInfoContent h2 {
+        font-size: 16px;
+    }
+    .text1{
+        padding-left: 0;
+    }
+    .modalWindowsInfoScroll {
+        height: calc(100% - 45vh);
+    }
+    .modalWindowsInfoClose {
+        top: 16px;
+        right: 16px;
+    }
+    .modalWindowsInfoBtn {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .modalWindowsInfoContent h2 {
+        padding-right: 0;
+    }
+    .modalWindowsInfoBtn button {
+        margin-right: 0;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+    .modalWindowsInfoBtn a {
+        margin-left: auto;
     }
 }
 
