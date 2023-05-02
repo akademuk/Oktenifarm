@@ -204,7 +204,8 @@ $(document).ready(function () {
       {
         breakpoint: 576,
         settings: {
-          infinite: true,
+          infinite: false,
+          centerMode: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         },

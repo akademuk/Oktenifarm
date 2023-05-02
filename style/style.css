@@ -2971,7 +2971,15 @@ content: none;
     max-width: 100%;
     object-fit: contain;
 }
-
+.pageArticleChoiceTabs .choiceTabsContentCenter .choiceTabsContentCenterText h3 {
+    display: none;
+}
+.pageArticleChoiceTabs .choiceTabsContentCenter .choiceTabsContentCenterText p {
+    display: none;
+}
+.pageArticleChoiceTabs .tabs-img-container .tabsBtn-img {
+    display: none !important;
+}
 
 
 
@@ -4501,6 +4509,96 @@ line-height: 130%;
     .pageArticle .wrapper .articlePageTop {
         padding: 0 64px;
     }
+    .pageArticleContainerRightImgtop {
+        display: none;
+    }
+    .pageArticleTextImg .familyContentSectionLeftText {
+        padding: 16px;
+        margin-bottom: 32px;
+    }
+    .pageArticle .wrapper {
+        max-width: 100%;
+    }
+    .pageArticleContainerRight {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pageArticleChoiceTabs .choiceTabsContainer {
+        width: 320px;
+        right: 0;
+        left: auto;
+    }
+    .pageArticleSlider .articleTop .articleTopNavigation .articlePrev,
+    .pageArticleSlider .articleTop .articleTopNavigation .articleNext {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        background: #2373BA !important;
+        cursor: pointer;
+        filter: none;
+    }
+    .pageArticleChoiceTabs .choiceTabsContainer {
+        height: 100px;
+    }
+    .pageArticleChoiceTabs .choiceTabsContent  {
+        height: 100%;
+    }
+    .pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn {
+        height: 100px;
+        padding-top: 35px;
+    }
+    .pageArticleSlider2 {
+        margin-left: -10px;
+    }
+    .pageArticleSlider {
+        margin-top: 32px;
+        padding-left: 64px;
+    }
+    .pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn p {
+        font-size: 16px;
+    }
+    .pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn > img {
+        width: 100% !important;
+    }
+    .pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn {
+        font-size: 13px;
+    }
+    .pageArticleChoiceTabs .choiceTabsContentCenter {
+        padding: 64px 16px 32px;
+        width: 320px;
+        height: 777.5px;
+        box-sizing: border-box;
+        min-width: 320px;
+    }
+    .pageArticleChoiceTabs {
+        height: 777.5px;
+    }
+    .pageArticleChoiceTabs .choiceTabsContentLeft {
+        display: block;
+    }
+    .pageArticleChoiceTabs .choiceTabsContentCenter .choiceTabsContentCenterText h3 {
+        display: block;
+    }
+    .pageArticleChoiceTabs .choiceTabsContentCenter .choiceTabsContentCenterText p {
+        display: block;
+    }
+    .pageArticleChoiceTabs .tabs-img-container .tabsBtn-img {
+        display: flex !important;
+    }
+    .pageArticleChoiceTabs .tabs-img-container .tab-img-content {
+        height: 250px;
+    }
+    .pageArticleChoiceTabs .tabs-img-container .tab-img-content img{
+        height: 250px;
+    }
+    .pageArticleChoiceTabs .tabs-img-container {
+        height: auto;
+    }
 }
 
 /* //max-width: 1200px */
@@ -5157,6 +5255,52 @@ line-height: 130%;
     .articleSliderItem  {
         width: 261px !important;
         margin: 0 12px;
+    }
+    .pageArticleChoiceTabs .choiceTabsContentLeft {
+        display: none;
+    }
+    .pageArticleChoiceTabs .choiceTabsContainer {
+        width: 100%;
+    }
+    .pageArticleChoiceTabs .choiceTabsContentCenter {
+        width: 100%;
+    }
+    .pageArticle .wrapper {
+        overflow-y: hidden;
+    }
+    .pageArticleContainerLeft {
+        padding: 0 16px;
+    }
+    .pageArticleContainerLeft h1 {
+        font-size: 22px;
+        line-height: 112.5%;
+        margin-bottom: 32px;
+    }
+    .pageArticle .wrapper .articlePageTop {
+        padding-left: 16px;
+        width: 100%;
+        overflow: scroll;
+        padding-right: 0;
+    }
+    .pageArticleSlider {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .articlePageNvigation:nth-last-of-type(1) {
+        white-space: nowrap;
+        padding-right: 50px;
+    }
+    .pageArticleSlider2 .slick-list {
+        padding: 0 !important;
+    }
+    .pageArticleSlider h2 {
+        font-size: 22px !important;
+    }
+    .pageArticle {
+        overflow: hidden;
+    }
+    .pageArticle .wrapper {
+        overflow-y: initial;
     }
 }
 
