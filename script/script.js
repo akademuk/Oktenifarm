@@ -259,7 +259,7 @@ $(document).ready(function () {
       {
         breakpoint: 576,
         settings: {
-          infinite: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -286,6 +286,15 @@ if (openBurger) {
     document.querySelector('.body').classList.remove('active');
   });
 }
+function closeBurger() {
+  const burger = document.querySelector('.burger');
+  if (burger.classList.contains('open')) {
+    burger.classList.remove('open');
+    document.querySelector('.navBurger').classList.remove('open');
+    document.querySelector('.body').classList.remove('active');
+  }
+}
+
 /* ------------------------------------------------------------------ */
 
 
@@ -370,3 +379,28 @@ $(document).ready(function () {
   });
 });
 
+
+
+const closeButtonList = document.getElementsByClassName("closeButton");
+
+for (let i = 0; i < closeButtonList.length; i++) {
+  const closeButton = closeButtonList[i];
+
+  closeButton.addEventListener("click", function() {
+    // Закрываем модальное окно, связанное с этой кнопкой
+    $.fancybox.close(i);
+  });
+}
+
+
+
+
+
+
+$("a[href^='#']").click(function(event) {
+  event.preventDefault();
+  var target = $(this).attr("href");
+  $("html, body").animate({
+      scrollTop: $(target).offset().top
+  }, 1000);
+});
