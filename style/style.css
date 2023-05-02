@@ -2418,7 +2418,7 @@ height: 26.74px;
   }
   .modalWindowsInfoScroll {
     overflow-y: scroll;
-    height: 460px;
+    height: calc(100% - 155px);
     width: 900px;
     margin: 0 auto;
     padding-right: 20px;
@@ -4603,6 +4603,13 @@ line-height: 130%;
     .pageArticleChoiceTabs .tabs-img-container {
         height: auto;
     }
+    .modalWindowsContent {
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .modalWindowsInfoContent {
+        height: 100vh;
+    }
 }
 
 /* //max-width: 1200px */
@@ -4993,6 +5000,9 @@ line-height: 130%;
         width: 261px !important;
         margin: 0 12px;
     }
+    .navBurgerPos {
+        top: 32px;
+    }
 }
 
 /* //max-width: 768px */
@@ -5305,6 +5315,10 @@ line-height: 130%;
     }
     .pageArticle .wrapper {
         overflow-y: initial;
+    }
+    .navBurgerPos {
+        top: 32px;
+    right: 38px;
     }
 }
 
