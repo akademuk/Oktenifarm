@@ -801,6 +801,7 @@ margin-top: 15px;
     padding-left: 0;
     display: flex;
     align-items: center;
+    height: 33vh;
     flex-direction: column;
 }
 
@@ -849,6 +850,7 @@ margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: calc(100% - 33vh);
 }
 
 .navBurgerContact p {
@@ -1417,7 +1419,7 @@ margin-top: 15px;
     flex-direction: column;
     height: 100%;
     top: 0;
-    left:calc(100% - 1138px);
+    left:calc(100% - 1139px);
 }
 .choiceTabsBtn {
     transition: all 0.3s;
@@ -1501,7 +1503,7 @@ margin-top: 15px;
     justify-content: center;
     align-items: center;
     height: 91px;
-    width: 20%;
+    width: -webkit-fill-available;
     background: #2775BC;
     border-radius: 4px;
     margin-right: 8px;
@@ -2775,18 +2777,162 @@ content: none;
 .slick-disabled {
     background: #4B4B4B !important;
 }
+.pageArticleList1 p{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #3F4C63;
+    margin-bottom: 8px;
+}
+.pageArticleList1 ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 48px;
+}
+.pageArticleList1 ul li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F4C63;
+}
+.pageArticleList2 h3 {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #3F4C63;
+    margin-bottom: 8px;
+}
+.pageArticleList2 p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F4C63;
+    margin-bottom: 16px;
+}
+.pageArticleList2 ul li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F4C63;
+}
+.pageArticleList2 ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 48px;
+}
+.pageArticleList3 h3 {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #3F4C63;
+    margin-bottom: 16px;
+}
+.pageArticleList3 p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F4C63;
+    margin-bottom: 16px;
+}
+.pageArticleList3 ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 48px;
+}
+.pageArticleList3 ul li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F4C63;
+}
+.pageArticleTextImg .familyContentSectionLeftImg {
+    height: 279px;
+}
+.pageArticleTextImg .familyContentSectionLeftImg img {
+    height: 101%;
+}
+.pageArticleTextImg .familyContentSectionLeftText{
+    padding-left: 150px;
+    box-sizing: border-box;
+}
+.pageArticleContainerRightImgtop {
+    height: 450px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+.pageArticleContainerRightImgtop img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pageArticleSlider .articleTop h2 {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 112.5%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #003B66;
+}
+.pageArticleSlider .articleTop .articleTopNavigation .articlePrev,
+.pageArticleSlider .articleTop .articleTopNavigation .articleNext {
+    background: transparent !important;
+    filter: brightness(0.5);
+    width: 26px;
+    height: 26px;
+}
+.pageArticleTextImg .familyContentSectionLeftText {
+    position: relative;
+}
+.pageArticleTextImg .familyContentSectionLeftText > img {
+    left: 0;
+    bottom: 25px;
+}
+.pageArticleSlider .articleDots {
+    margin-top: 16px;
+}
+.pageArticleChoiceTabs {
+    margin-top: 64px;
+    height: 565px;
+    position: relative;
+}
+.pageArticleChoiceTabs .choiceTabsContainer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    display: flex;
+    height: 144px;
+    flex-direction: row;
+}
+.pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn {
+    width: 25%;
+    padding-top:0;
+    height: 100%;
+    border-bottom: 0;
+    font-size: 16px;
+    padding-top: 60px;
+    border-right: 4px solid #2373BA;
+}
+.pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn:nth-last-of-type(1) {
+    border-right: 0;
+}
+.pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn > img {
+    width: 100%;
+    max-width: 100%;
+}
+.pageArticleChoiceTabs .choiceTabsContainer .choiceTabsBtn p {
+    font-size: 22px;
+line-height: 130%;
+}
+.pageArticleChoiceTabs .choiceTabsContentCenter {
+    margin-left: 0;
+    padding: 31px;
+    box-sizing: border-box;
+}
+.pageArticleChoiceTabs .choiceTabsContentCenter .tab-img-content {
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 @media (max-width: 1920px) {
     .header-wrapper {
@@ -3044,6 +3190,11 @@ content: none;
         height: 744px;
     }
 }
+@media (min-height: 840px) and (max-width: 992px) {
+    .modalWindowsContent {
+        overflow-y: scroll;
+    }
+}
 @media (max-width: 1200px) {
     .banner {
         padding: 32px 0;
@@ -3058,7 +3209,10 @@ content: none;
         width: 50%;
         padding-left: 50px;
     }
-    
+    .articleSliderItem  {
+        width: 261px !important;
+        margin: 0 12px;
+    }
     .modalWindowsContentLeft {
         width: 50%;
     }
@@ -4459,6 +4613,15 @@ content: none;
     .familyContentSectionRight {
         width: 100%;
     }
+    .toggle-btn {
+        width: 26px;
+        top: -25px;
+        height: 26px;
+    }
+    .articleSliderItem  {
+        width: 261px !important;
+        margin: 0 12px;
+    }
 }
 
 /* //max-width: 768px */
@@ -4714,6 +4877,17 @@ content: none;
     }
     .modalWindowsInfoBtn a {
         margin-left: auto;
+    }
+    .articleTopNavigation {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .articleSliderItem {
+        margin: 0;
+    }
+    .articleSliderItem  {
+        width: 261px !important;
+        margin: 0 12px;
     }
 }
 

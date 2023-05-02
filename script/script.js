@@ -171,6 +171,51 @@ $(document).ready(function () {
 /* ------------------------------------------------------------------ */
 
 
+
+
+
+/* Слайдер Статьи */
+$(document).ready(function () {
+  $('.pageArticleSlider2').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    prevArrow: $('.articlePrev'),
+    nextArrow: $('.articleNext'),
+    appendDots: $('.articleDots'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          infinite: false,
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
+  });
+});
+/* ------------------------------------------------------------------ */
+
+
+
 /* Слайдер Отзывы */
 $(document).ready(function () {
   $('.reviewsSlider').slick({
