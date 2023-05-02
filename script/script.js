@@ -152,13 +152,23 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
+          variableWidth: true,
           infinite: false,
-          slidesToShow: 1.5,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 576,
+        settings: {
+          variableWidth: true,
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 400,
         settings: {
           variableWidth: true,
           infinite: false,
