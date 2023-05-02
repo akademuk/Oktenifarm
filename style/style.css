@@ -722,7 +722,7 @@ margin-top: 15px;
 
 .burger {
     position: absolute;
-    top: 5px;
+    top: 3px;
     right: 0;
     width: 15px;
     height: 5px;
@@ -777,20 +777,33 @@ margin-top: 15px;
 
 .navBurger {
     position: fixed;
-    right: -288px;
+    right: -100%;
     top: 0;
     height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
-    width: 288px;
-    background-color: #2373BA;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
     transform: translateX(100%);
     transition: all .2s ease-out;
     z-index: 2;
-    padding-top: 128px;
 }
-
+.navBurgerPos {
+    position: absolute;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    top: 57px;
+    right: 88px;
+}
 .scroll {
+    padding-top: 128px;
+    width: 288px;
+    background-color: #2373BA;
     height: calc(100vh - 128px);
     overflow: scroll;
 }
@@ -2930,9 +2943,6 @@ line-height: 130%;
     padding: 31px;
     box-sizing: border-box;
 }
-.pageArticleChoiceTabs .choiceTabsContentCenter .tab-img-content {
-
-}
 
 @media (max-width: 1920px) {
     .header-wrapper {
@@ -2988,6 +2998,140 @@ line-height: 130%;
         height: 100%;
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .modalWindows {
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: block !important;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-out;
+    }
+    .modalWindowsContent {
+        width: 288px !important;
+    }
+    .modalWindows.active {
+      transform: translateX(0);
+    }
+    .modalWindowsContent {
+        flex-direction: column-reverse;
+    }
+    .modalWindowsContentRight {
+        width: 100%;
+        padding: 64px 16px;
+    }
+    .close-modal {
+        top: 16px;
+        right: 16px;
+    }
+    .modalWindowsContentLeftContent {
+        padding: 20px;
+    }
+    .modalWindowsContent {
+        top: 42%;
+        right: -13%;
+        left: auto;
+    }
+    .modalWindowsInfo {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex !important;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-out;
+        justify-content: flex-end;
+      }
+      .modalWindowsInfoContent {
+          width: 288px !important;
+          transform: none;
+          top: 0;
+          right: 0 !important;
+          left: auto;
+      }
+      .modalWindowsInfo.active {
+        transform: translateX(0);
+      }
+      .modalWindowsInfoContent {
+        padding: 80px 10px !important;
+      }
+      .modalWindowsInfoBtn {
+        flex-direction: column;
+      }
+      .modalWindowsInfoScroll {
+        height: calc(100% - 300px);
+      }
+      .modalWindowsInfoBtn {
+        justify-content: flex-end;
+      }
+      .modalWindowsInfoBtn button {
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+      .modalWindowsInfoContent h2 {
+        padding-right: 0 !important;
+      }
+      .modalWindowsInfoBtn a{
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: 10px;
+        box-sizing: border-box;
+      }
+  }
+  
+  @media screen and (min-width: 1201px) {
+    .modalWindows {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      display: block !important;
+      transform: translate(-50%, -300%);
+      transition: transform 0.3s ease-out;
+    }
+    .modalWindows.active {
+      transform: translate(-50%, -50%);
+    }
+    .modalWindowsInfo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        display: block !important;
+        transform: translate(-50%, -300%);
+        transition: transform 0.3s ease-out;
+      }
+      .modalWindowsInfo.active {
+        transform: translate(-50%, -50%);
+      }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* //max-width: 1920px */
 
@@ -3186,7 +3330,8 @@ line-height: 130%;
 /* responsive  */
 @media (min-height: 840px) {
     .modalWindowsContent {
-        overflow-y: hidden;
+        overflow-y: scroll;
+        overflow-x: hidden;
         height: 744px;
     }
 }
@@ -3199,22 +3344,33 @@ line-height: 130%;
     .banner {
         padding: 32px 0;
     }
-    .modalWindowsContent {
-        width: 90%;
-    }
     .modalLogoImg {
        display: none;
-    }
-    .modalWindowsContentRight {
-        width: 50%;
-        padding-left: 50px;
     }
     .articleSliderItem  {
         width: 261px !important;
         margin: 0 12px;
     }
+    .modalLogoTop img {
+        width: 86.05px;
+height: 14.1px;
+    }
+    .modalLogoTop p {
+        font-size: 5.78245px;
+line-height: 107.5%;
+    }
+    .modalLogo > p {
+        font-size: 6.32967px;
+line-height: 130%;
+    }
+    .modalSectionImg {
+        width: 100%;
+    }
+    .modalSectionImg img{
+        max-width: 100%;
+    }
     .modalWindowsContentLeft {
-        width: 50%;
+        width: 100% !important;
     }
     .banner .header-wrapper {
         padding: 0 64px;
@@ -3244,7 +3400,7 @@ line-height: 130%;
     }
 
     .burger {
-        top: 7px;
+        top: 4px;
     }
 
     .banner-center h1 {
@@ -3334,7 +3490,8 @@ line-height: 130%;
     }
 
     .navBurger {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .burger {
@@ -4029,12 +4186,6 @@ line-height: 130%;
         margin-top: 8px !important;
         margin-left: 0 !important;
     }
-    .modalWindowsContent {
-        height: auto;
-    }
-    .modalWindowsContentLeftImg {
-        height: 87%;
-    }
     .whyChooseSection  {
         position: relative;
     }
@@ -4225,6 +4376,23 @@ line-height: 130%;
     }
     .modalWindowsInfoBtn {
         max-width: 100%;
+    }
+    .modalLogoImg {
+        display: block;
+        width: 125px;
+        height: 200px;
+        right: 0;
+    }
+    .modalLogoImg img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .modalWindowsContent {
+        transform: none;
+        top: 0 !important;
+        right: 0 !important;
     }
 }
 
@@ -4537,12 +4705,6 @@ line-height: 130%;
     }
     .modalWindowsContentLeft {
         width: 100%;
-    }
-    .modalLogoImg {
-        display: block;
-        width: 200px;
-        height: 200px;
-        right: 0;
     }
     .modalWindowsContentRight h2 {
         margin-top: 20px;
@@ -4857,7 +5019,7 @@ line-height: 130%;
         padding-left: 0;
     }
     .modalWindowsInfoScroll {
-        height: calc(100% - 45vh);
+        height: calc(100% - 260px);
     }
     .modalWindowsInfoClose {
         top: 16px;
