@@ -160,9 +160,11 @@ $(document).ready(function () {
       {
         breakpoint: 576,
         settings: {
-          infinite: true,
+          variableWidth: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
         },
       }
     ],
