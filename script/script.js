@@ -107,26 +107,33 @@ $(document).ready(function () {
     if (!$(this).hasClass('active')) { // проверяем, не является ли новый таб уже активным
       $('.choiceTabsBtn').removeClass('active');
       $('.choiceTabsContent').removeClass('active');
-      $('.tab-img-content').eq(0).addClass('active');
   
       $(this).addClass('active');
       var newContent = $('[data-tab="' + tab_id + '"]');
-      var newTabImgContent = newContent.find(".tab-img-content:first-child");
   
-      if (newTabImgContent.length) {
-        newTabImgContent.show().addClass("active");
-      }
+      newContent.find('.tab-img-content:first-child').show().addClass('active');
   
       newContent.addClass('active').show();
+  
+      tabsBtn.removeClass('active');
+      $(this).addClass('active');
   
       if (prevContent.get(0) !== newContent.get(0)) { // проверяем, не является ли новый контент уже активным
         prevContent.removeClass('active');
         activeContent = newContent;
       }
+      // Скрываем все элементы tab-img-content
+$('.tab-img-content').hide().removeClass('active');
+
+// Находим элемент tab-img-content для текущего выбранного таба и добавляем ему класс active
+$('[data-tab="' + tab_id + '"] .tab-img-content:first-child').addClass('active').show();
+
     }
   });
   
+  
 });
+
 /* ------------------------------------------------------------------ */
 
 
